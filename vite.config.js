@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 // base is set to the repo name for GitHub Pages deployment
 export default defineConfig({
   plugins: [react()],
-  base: '/Thrivemap/',
+  base: '/thrivemap/',
 })
