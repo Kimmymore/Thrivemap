@@ -2145,6 +2145,1078 @@ export const COUNTRY_DETAILS = {
     },
   },
 
+  // ── Switzerland ────────────────────────────────────────────────────────────
+  'CH': {
+    climate: {
+      text: 'Switzerland spans three climate zones. The central Mittelland plateau (Zurich, Bern) has a temperate continental climate — warm summers averaging 23–26°C and cold winters with snow. The southern canton of Ticino (Lugano) has a Mediterranean feel — hot summers, mild winters, and around 2,200 sun hours per year. Alpine regions above 1,500 m are cooler year-round with heavy snowfall. Geneva on the western plateau benefits from the Föhn effect and averages around 1,900 sun hours annually. The climate rewards those who enjoy distinct seasons; those needing warmth should focus on Ticino or the lake regions.',
+      sources: [
+        { label: 'Switzerland climate — Meteoswiss', url: 'https://www.meteoswiss.admin.ch/climate/the-climate-of-switzerland.html' },
+        { label: 'Switzerland weather overview', url: 'https://www.weather-atlas.com/en/switzerland' },
+      ],
+    },
+    lgbtq_orient: {
+      text: 'Switzerland legalised same-sex marriage on 1 July 2022, following a popular referendum in which 64% voted yes. Married same-sex couples have equal adoption rights and access to sperm donation. Anti-discrimination protections covering sexual orientation in goods and services were added to the criminal code in 2020. Switzerland sits in the top tier of European LGBTQ legal frameworks.',
+      sources: [
+        { label: 'Switzerland — Equaldex', url: 'https://www.equaldex.com/region/ch' },
+        { label: 'ILGA Europe — Switzerland', url: 'https://www.ilga-europe.org/country/switzerland/' },
+      ],
+    },
+    lgbtq_gender: {
+      text: 'Legal gender recognition was simplified in January 2022 — adults can change their name and gender marker via a simple declaration at the civil registry, with no medical requirements. Minors aged 16–18 require parental consent or a court order. Non-binary gender recognition is not yet available in federal documents, though political discussion is ongoing. Access to gender-affirming healthcare exists through the main health insurers.',
+      sources: [
+        { label: 'TGEU Trans Rights Map — Switzerland', url: 'https://transrightsmap.tgeu.org/home/' },
+        { label: 'Switzerland — Equaldex', url: 'https://www.equaldex.com/region/ch' },
+      ],
+    },
+    lgbtq_social: {
+      text: 'Social acceptance is very high, particularly in Zurich, Geneva, Basel, and Bern. Zurich Pride (Pride Zurich) is one of the major events in the German-speaking world. The 2022 marriage referendum result reflected a genuinely liberal majority. Rural and more conservative Catholic cantons (Uri, Appenzell) are quieter but not hostile. Switzerland consistently scores among the top ten in Eurobarometer LGBTQ acceptance surveys.',
+      sources: [
+        { label: 'Eurobarometer LGBTQ acceptance', url: 'https://europa.eu/eurobarometer/' },
+        { label: 'Switzerland — Equaldex', url: 'https://www.equaldex.com/region/ch' },
+      ],
+    },
+    racial: {
+      text: 'Switzerland is highly international — around 25% of residents are foreign nationals. The cities are genuinely multicultural and cosmopolitan. Discrimination in housing and employment has been documented for applicants with non-European names, and some microaggressions are reported by Black and South Asian residents. Overall, however, Switzerland is among the more welcoming European countries for people of colour, particularly in Zurich and Geneva where the expat community is large and well-established.',
+      sources: [
+        { label: 'FRA — Being Black in the EU', url: 'https://fra.europa.eu/en/publication/2023/being-black-eu' },
+        { label: 'Racism in Switzerland — SRF overview', url: 'https://www.srf.ch' },
+      ],
+    },
+    safety: {
+      text: 'Switzerland is one of the safest countries in the world. Violent crime is extremely rare, and the country ranks in the top five globally on the Global Peace Index. Political stability is exceptional — the unique consensus democracy system means political crises are uncommon. Natural disaster risk is low aside from occasional Alpine flooding and avalanches in high-altitude zones.',
+      sources: [
+        { label: 'Global Peace Index — Switzerland', url: 'https://www.visionofhumanity.org/maps/' },
+        { label: 'Switzerland safety overview', url: 'https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Switzerland.html' },
+      ],
+    },
+    healthcare: {
+      text: 'Switzerland has a mandatory private health insurance (Krankenkasse) system — residents must purchase a basic policy (Grundversicherung). Care quality is world-class and access is universal for residents. The system is expensive — basic premiums average CHF 300–500/month per adult — but the quality of hospitals, specialists, and preventive care is among the highest globally. There are no significant waiting times for most procedures.',
+      sources: [
+        { label: 'Swiss health insurance overview — BAG', url: 'https://www.bag.admin.ch/bag/en/home/versicherungen/krankenversicherung.html' },
+        { label: 'Euro Health Consumer Index', url: 'https://healthpowerhouse.com/publications/' },
+      ],
+    },
+    cost_value: {
+      text: 'Switzerland is one of the most expensive countries in the world. Zurich and Geneva consistently rank in global top-five most expensive cities. A one-bedroom apartment in central Zurich costs CHF 2,200–3,500/month; Geneva is similar. Groceries, dining out, and public transport are all significantly pricier than in neighbouring France or Germany. The trade-off is that local salaries are also the highest in Europe, so for those working locally the purchasing power is reasonable. For those relocating on a fixed foreign income, Switzerland is a very costly choice.',
+      sources: [
+        { label: 'Numbeo — cost of living in Switzerland', url: 'https://www.numbeo.com/cost-of-living/country_result.jsp?country=Switzerland' },
+        { label: 'Mercer cost of living survey', url: 'https://www.mercer.com/solutions/workforce-and-careers/global-talent-hr-consulting/cost-of-living/' },
+      ],
+    },
+    visa: {
+      text: 'EU/EEA citizens benefit from bilateral free-movement agreements giving them the right to live and work in Switzerland. Non-EU nationals face a stricter permit system: the L permit (short-stay, 1 year), B permit (residence, 5 years), and C permit (settlement after 10 years). Switzerland has no dedicated digital nomad visa — remote workers for foreign companies are technically not permitted to work on a tourist stay, though enforcement is limited for short stays. A self-employment residence permit is the closest option for independent contractors.',
+      sources: [
+        { label: 'Switzerland immigration — SEM', url: 'https://www.sem.admin.ch/sem/en/home/themen/aufenthalt.html' },
+        { label: 'Expatica — Switzerland visa guide', url: 'https://www.expatica.com/ch/moving/visas/switzerland-visa-guide/' },
+      ],
+    },
+  },
+
+  // ── Spain ──────────────────────────────────────────────────────────────────
+  'ES': {
+    climate: {
+      text: 'Spain is climatically one of the most diverse countries in Europe. The Mediterranean coast (Costa del Sol, Valencia, Costa Brava) enjoys hot dry summers (30–38°C) and mild winters, with 2,800–3,300 sun hours per year in the south. The central Meseta (Madrid) has a more extreme continental climate — scorching summers above 35°C and cold winters. The Basque Country and Galicia in the north are green, rainy, and mild — Atlantic in character. The Canary Islands (year-round 18–26°C, 3,000+ sun hours) are unique, offering the best climate in Europe for sunshine seekers. Overall Spain suits almost any climate preference somewhere within its borders.',
+      sources: [
+        { label: 'Spain climate — AEMET', url: 'https://www.aemet.es/en/serviciosclimaticos' },
+        { label: 'Spain weather overview', url: 'https://www.weather-atlas.com/en/spain' },
+      ],
+    },
+    lgbtq_orient: {
+      text: 'Spain was one of the first countries in the world to legalise same-sex marriage, doing so in July 2005. Full equality includes joint adoption, inheritance rights, and all marital benefits. Anti-discrimination protections are comprehensive. Spain is consistently ranked among the top five LGBTQ-friendly countries globally. Barcelona and Madrid (specifically the Chueca district) are internationally celebrated LGBTQ destinations. Sitges near Barcelona is one of Europe\'s most famous gay beach resorts.',
+      sources: [
+        { label: 'Spain — Equaldex', url: 'https://www.equaldex.com/region/es' },
+        { label: 'ILGA Europe — Spain', url: 'https://www.ilga-europe.org/country/spain/' },
+      ],
+    },
+    lgbtq_gender: {
+      text: 'Spain passed a landmark Trans Law (Ley Trans) in February 2023 — one of the most progressive in Europe. Adults aged 16 and over can change their legal gender and name by simple declaration at the civil registry, with no medical diagnosis or treatment required. Those aged 14–16 require parental consent; 12–14 need a judge\'s approval. Non-binary legal recognition is not yet available at the national level but is a growing political discussion.',
+      sources: [
+        { label: 'Spain Trans Law 2023 — BOE', url: 'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-5366' },
+        { label: 'TGEU Trans Rights Map — Spain', url: 'https://transrightsmap.tgeu.org/home/' },
+      ],
+    },
+    lgbtq_social: {
+      text: 'Social acceptance is extremely high, particularly in Madrid, Barcelona, Valencia, and Seville. Spain has undergone one of the fastest social transformations of any country — from a Catholic dictatorship to one of the world\'s most LGBTQ-affirming societies within two generations. Young Spaniards show among the highest LGBTQ acceptance rates in Europe. Rural areas, particularly in more conservative Castile and some southern communities, are more traditional, but active hostility is uncommon.',
+      sources: [
+        { label: 'Eurobarometer — LGBTQ acceptance in Spain', url: 'https://europa.eu/eurobarometer/' },
+        { label: 'Spain — Equaldex social acceptance', url: 'https://www.equaldex.com/region/es' },
+      ],
+    },
+    racial: {
+      text: 'Spain has become significantly more diverse with large communities from Morocco, Latin America (Ecuador, Colombia, Venezuela), China, and Sub-Saharan Africa. Black Africans and Afro-Latinos are increasingly visible, particularly in Madrid and Barcelona. Racism exists — Afro-Spanish people report discrimination in housing, employment, and police stop-and-search. Anti-immigrant sentiment is present in some political discourse. However, for POC who present as expats or tourists from Western countries, the day-to-day experience is generally positive, and Latin American heritage is widely shared and celebrated.',
+      sources: [
+        { label: 'FRA — Being Black in the EU', url: 'https://fra.europa.eu/en/publication/2023/being-black-eu' },
+        { label: 'SOS Racismo Spain annual report', url: 'https://www.sosracismo.eu' },
+      ],
+    },
+    safety: {
+      text: 'Spain is generally very safe. Violent crime is low by global standards. The main risk in tourist areas is pickpocketing and petty theft — particularly in Barcelona (La Rambla, metro), Madrid, and Seville. Terrorism risk is low but not zero historically. The Basque Country has been peaceful since ETA\'s dissolution in 2018. Political tensions around Catalan independence remain but do not affect daily safety.',
+      sources: [
+        { label: 'Global Peace Index — Spain', url: 'https://www.visionofhumanity.org/maps/' },
+        { label: 'Spain travel advice — UK FCDO', url: 'https://www.gov.uk/foreign-travel-advice/spain' },
+      ],
+    },
+    healthcare: {
+      text: 'The Sistema Nacional de Salud (SNS) provides universal public healthcare for residents and registered workers. Quality is generally high — Spain ranks in the top 10 in Europe in the Euro Health Consumer Index. Public healthcare is free for those registered (empadronado). Some regions are better resourced than others; the Basque Country and Navarre are particularly well-regarded. Private health insurance is affordable (€50–100/month) and widely used by expats for faster access and English-speaking doctors.',
+      sources: [
+        { label: 'Spain health system overview — Ministry of Health', url: 'https://www.sanidad.gob.es/en/home.htm' },
+        { label: 'Euro Health Consumer Index', url: 'https://healthpowerhouse.com/publications/' },
+      ],
+    },
+    cost_value: {
+      text: 'Spain offers excellent value by Western European standards. Madrid and Barcelona are the most expensive cities but remain cheaper than Paris, London, or Amsterdam. A one-bedroom central apartment in Madrid runs €1,200–1,800/month; in smaller cities like Seville, Málaga, or Valencia it\'s €700–1,100. Eating out is excellent value — a full menú del día (set lunch) costs €10–14 including wine. The Canary Islands are even more affordable. Southern Spain (Andalusia, Murcia, Extremadura) offers very low costs with exceptional quality of life.',
+      sources: [
+        { label: 'Numbeo — cost of living in Spain', url: 'https://www.numbeo.com/cost-of-living/country_result.jsp?country=Spain' },
+        { label: 'Expatistan — Madrid cost of living', url: 'https://www.expatistan.com/cost-of-living/madrid' },
+      ],
+    },
+    visa: {
+      text: 'EU/EEA citizens have full freedom of movement. Spain launched a Digital Nomad Visa (Visa para Nómadas Digitales) in 2023 — one of the most popular in Europe. Requirements include proof of remote employment or self-employment outside Spain, minimum income of approximately €2,646/month (as of 2024), and private health insurance. Initial visa is 1 year (extendable to 3+2 years residence permit). The Non-Lucrative Residence Visa suits those with passive income or savings. A Golden Visa (real-estate investment ≥€500,000) also exists, though the government announced plans to phase it out.',
+      sources: [
+        { label: 'Spain Digital Nomad Visa — Exteriores.gob.es', url: 'https://www.exteriores.gob.es/en/ServiciosAlCiudadano/Paginas/nomadas-digitales.aspx' },
+        { label: 'Spain immigration guide — Expatica', url: 'https://www.expatica.com/es/moving/visas/spain-visa-guide/' },
+      ],
+    },
+  },
+
+  // ── United Kingdom ─────────────────────────────────────────────────────────
+  'GB': {
+    climate: {
+      text: 'The UK has a temperate maritime climate — mild, overcast, and frequently rainy. London averages around 1,600 sun hours per year, making it one of the less sunny Western European capitals. Southeast England is the driest and sunniest region. Scotland is colder and significantly wetter; the western Highlands receive some of the highest rainfall in Europe. Winters are grey and damp rather than severely cold (London rarely drops below -2°C), and summers are warm but not hot (22–25°C in London). Not a destination for those prioritising sunshine or warmth.',
+      sources: [
+        { label: 'UK climate — Met Office', url: 'https://www.metoffice.gov.uk/climate/uk' },
+        { label: 'UK weather overview', url: 'https://www.weather-atlas.com/en/united-kingdom' },
+      ],
+    },
+    lgbtq_orient: {
+      text: 'Same-sex marriage has been legal in England and Wales since March 2014, in Scotland since December 2014, and in Northern Ireland since January 2020. Anti-discrimination law is comprehensive under the Equality Act 2010, covering employment, services, and housing. The UK has one of the most robust LGBTQ legal frameworks in the world. London (particularly Soho, Vauxhall, and Brixton), Manchester (Canal Street), and Brighton are internationally renowned LGBTQ destinations.',
+      sources: [
+        { label: 'UK — Equaldex', url: 'https://www.equaldex.com/region/gb' },
+        { label: 'ILGA Europe — United Kingdom', url: 'https://www.ilga-europe.org/country/united-kingdom/' },
+      ],
+    },
+    lgbtq_gender: {
+      text: 'Legal gender recognition under the Gender Recognition Act 2004 requires a diagnosis of gender dysphoria and a two-year living-in-gender period before a Gender Recognition Certificate (GRC) can be obtained. The Scottish Parliament passed a self-identification bill in 2022 but Westminster blocked its implementation in 2023 — a controversial decision. Non-binary gender recognition is not available in UK documents. The public debate around trans rights has been particularly heated in the UK compared to other comparable countries, affecting the social climate for some trans people.',
+      sources: [
+        { label: 'TGEU Trans Rights Map — UK', url: 'https://transrightsmap.tgeu.org/home/' },
+        { label: 'Stonewall — gender recognition', url: 'https://www.stonewall.org.uk' },
+      ],
+    },
+    lgbtq_social: {
+      text: 'Overall social acceptance is high, particularly in London, Manchester, Brighton, and Edinburgh. London\'s LGBTQ scene is among the largest and most diverse in the world. Brighton is known as one of the most LGBTQ-friendly cities globally. However, the public discourse around trans rights has become unusually polarised compared to most other European countries, which some trans people find stressful. Outside major cities, acceptance varies but is generally reasonable.',
+      sources: [
+        { label: 'Stonewall — UK LGBTQ survey', url: 'https://www.stonewall.org.uk' },
+        { label: 'Eurobarometer — LGBTQ acceptance', url: 'https://europa.eu/eurobarometer/' },
+      ],
+    },
+    racial: {
+      text: 'The UK is genuinely diverse, particularly in London where over 40% of residents identify as non-white. Large communities from South Asia (India, Pakistan, Bangladesh), the Caribbean, West Africa, East Africa, East Asia, and the Middle East are well-established. Racism exists — the Windrush scandal exposed institutional racism, and anti-Black and anti-Asian incidents have been documented, particularly during and after Brexit. London is generally very cosmopolitan and welcoming. Outside large cities, diversity drops significantly and some POC report more frequent microaggressions.',
+      sources: [
+        { label: 'Race Disparity Audit — UK Government', url: 'https://www.gov.uk/government/publications/race-disparity-audit' },
+        { label: 'Runnymede Trust — race equality', url: 'https://www.runnymedetrust.org' },
+      ],
+    },
+    safety: {
+      text: 'The UK is generally safe. Violent crime is low by global standards. Knife crime in specific London boroughs and other cities is a documented issue. Terrorism threat exists (assessed as "substantial" by MI5 for most of the past decade) but incidents are infrequent. Overall personal safety in everyday life is high, and the emergency services are responsive and professional.',
+      sources: [
+        { label: 'Global Peace Index — UK', url: 'https://www.visionofhumanity.org/maps/' },
+        { label: 'UK crime statistics — ONS', url: 'https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice' },
+      ],
+    },
+    healthcare: {
+      text: 'The National Health Service (NHS) provides free healthcare at the point of use for UK residents. Emergency care and GP care are free; prescription charges apply in England (free in Scotland, Wales, and Northern Ireland). Quality of care is high and the NHS is world-renowned, but waiting times for elective procedures and specialist referrals have lengthened significantly since 2020. Private healthcare is available and affordable by global standards (£100–200/month for comprehensive cover).',
+      sources: [
+        { label: 'NHS overview — NHS.uk', url: 'https://www.nhs.uk' },
+        { label: 'Euro Health Consumer Index', url: 'https://healthpowerhouse.com/publications/' },
+      ],
+    },
+    cost_value: {
+      text: 'London is one of the most expensive cities in the world for housing — a one-bedroom flat in central London costs £2,000–3,500/month to rent. Outside London, costs drop substantially: Manchester, Leeds, Edinburgh, and Birmingham are significantly more affordable. Food, transport, and services in the UK are expensive by European comparison. The strong pound makes the UK expensive for those earning in other currencies. The NHS removes one major cost that burdens residents in other countries.',
+      sources: [
+        { label: 'Numbeo — cost of living in UK', url: 'https://www.numbeo.com/cost-of-living/country_result.jsp?country=United+Kingdom' },
+        { label: 'Expatistan — London cost of living', url: 'https://www.expatistan.com/cost-of-living/london' },
+      ],
+    },
+    visa: {
+      text: 'Post-Brexit, the UK operates a points-based immigration system. EU/EEA citizens no longer have automatic free movement and require a visa for stays over 6 months. A Skilled Worker Visa requires a job offer from an approved employer above a salary threshold. The Global Talent Visa is available for those with exceptional achievements in tech, arts, or academia. Ireland is an exception — Irish citizens retain full rights under the Common Travel Area. There is no dedicated digital nomad visa as of 2025. The UK\'s immigration system is considered restrictive for those without a specific job offer.',
+      sources: [
+        { label: 'UK Visas and Immigration — Gov.uk', url: 'https://www.gov.uk/browse/visas-immigration' },
+        { label: 'UK points-based immigration — Expatica', url: 'https://www.expatica.com/uk/moving/visas/uk-visa-guide/' },
+      ],
+    },
+  },
+
+  // ── Hungary ────────────────────────────────────────────────────────────────
+  'HU': {
+    climate: {
+      text: 'Hungary has a continental climate with warm summers and cold winters. Budapest averages 26–28°C in July and around -1°C in January, with snowfall common. The country receives around 2,000 sun hours per year — reasonable for Central Europe, concentrated in summer. The flat Pannonian Plain dominates most of the country. Lake Balaton provides a popular resort area with warmer summer temperatures. Autumn is beautiful; winters can be cold and grey.',
+      sources: [
+        { label: 'Hungary climate — OMSZ', url: 'https://www.met.hu/en/eghajlat/magyarorszag_eghajlata/' },
+        { label: 'Hungary weather overview', url: 'https://www.weather-atlas.com/en/hungary' },
+      ],
+    },
+    lgbtq_orient: {
+      text: 'Hungary decriminalised homosexuality in 1961 but has moved in a sharply regressive direction under the Orbán government. There is no recognition of same-sex partnerships or marriage. A 2021 law banned the "portrayal or promotion" of homosexuality and gender reassignment to those under 18, drawing EU legal action for violating EU non-discrimination law. The EU has withheld billions in cohesion funds partially over rule-of-law concerns including LGBTQ rights. The legal framework is among the most hostile in the EU.',
+      sources: [
+        { label: 'Hungary — Equaldex', url: 'https://www.equaldex.com/region/hu' },
+        { label: 'ILGA Europe — Hungary', url: 'https://www.ilga-europe.org/country/hungary/' },
+      ],
+    },
+    lgbtq_gender: {
+      text: 'Hungary halted all legal gender recognition in 2020 — a law passed by the Orbán government defined sex in all official documents as the sex at birth and non-changeable. Trans people cannot update their legal gender marker. This is the most regressive trans rights situation in the EU. TGEU ranks Hungary last or near-last on the Trans Rights Map every year.',
+      sources: [
+        { label: 'TGEU Trans Rights Map — Hungary', url: 'https://transrightsmap.tgeu.org/home/' },
+        { label: 'ILGA Europe — Hungary', url: 'https://www.ilga-europe.org/country/hungary/' },
+      ],
+    },
+    lgbtq_social: {
+      text: 'Budapest has an active if discreet LGBTQ community, and Budapest Pride has been held annually since 1993. However, the government-sponsored anti-LGBTQ rhetoric has emboldened hostility and normalised discrimination. Outside Budapest, conservative rural and religious communities are dominant. LGBTQ Hungarians — particularly young people — are leaving the country in significant numbers. The climate is difficult and not recommended for those seeking open LGBTQ community life.',
+      sources: [
+        { label: 'Budapest Pride — bpride.hu', url: 'https://bpride.hu' },
+        { label: 'ILGA Europe — Hungary rainbow score', url: 'https://www.ilga-europe.org/country/hungary/' },
+      ],
+    },
+    racial: {
+      text: 'Hungary is ethnically homogeneous (over 85% Hungarian) with a Roma minority that faces severe and documented discrimination in housing, education, and employment. The Orbán government\'s explicit anti-immigration stance has included anti-African and anti-Muslim rhetoric. Black and Asian visitors are very rare outside Budapest and may attract stares. Violent racist incidents are uncommon but the social climate has become less welcoming over the past decade.',
+      sources: [
+        { label: 'FRA — Roma discrimination in Hungary', url: 'https://fra.europa.eu/en/country/hungary' },
+        { label: 'ECRI report — Hungary', url: 'https://www.coe.int/en/web/european-commission-against-racism-and-intolerance/hungary' },
+      ],
+    },
+    safety: {
+      text: 'Hungary is physically safe in terms of street crime. Violent crime is low and Budapest is generally a safe city to walk around. However, the rule-of-law situation has deteriorated significantly — press freedom and judicial independence have been curtailed. For LGBTQ people and people of colour, the political climate creates a different kind of risk that is not captured by crime statistics.',
+      sources: [
+        { label: 'Global Peace Index — Hungary', url: 'https://www.visionofhumanity.org/maps/' },
+        { label: 'Freedom House — Hungary', url: 'https://freedomhouse.org/country/hungary' },
+      ],
+    },
+    healthcare: {
+      text: 'Hungary has a public healthcare system (NEAK) that is theoretically universal but chronically underfunded. Informal "gratitude payments" (hálapénz) to doctors, while technically banned since 2021, remain culturally embedded in some areas. Quality of facilities and specialist care is lower than Western EU standards. Private clinics in Budapest offer significantly better service and are affordable by Western standards (€50–150 for a consultation).',
+      sources: [
+        { label: 'WHO — Hungary health system overview', url: 'https://www.who.int/countries/hun/' },
+        { label: 'Euro Health Consumer Index', url: 'https://healthpowerhouse.com/publications/' },
+      ],
+    },
+    cost_value: {
+      text: 'Hungary — and particularly Budapest — offers very good value for money. A one-bedroom flat in central Budapest costs €600–900/month; food and transport are very affordable. The city has a rich cultural scene, excellent restaurants and thermal baths, and a vibrant café culture. For those with foreign income (especially in EUR or USD), the Hungarian Forint goes a long way. Budapest is one of the most popular digital nomad cities in Central Europe partly for this reason.',
+      sources: [
+        { label: 'Numbeo — cost of living in Hungary', url: 'https://www.numbeo.com/cost-of-living/country_result.jsp?country=Hungary' },
+        { label: 'Expatistan — Budapest cost of living', url: 'https://www.expatistan.com/cost-of-living/budapest' },
+      ],
+    },
+    visa: {
+      text: 'EU/EEA citizens have free movement. Hungary introduced the "White Card" digital nomad visa in 2024, targeting non-EU remote workers employed abroad. It requires proof of remote employment, a minimum monthly income of around €2,000, and is renewable annually. General residency for non-EU nationals requires employment or sufficient income proof. The process is generally straightforward, and Hungary is considered an accessible and affordable base for non-EU digital nomads in Central Europe.',
+      sources: [
+        { label: 'Hungary White Card digital nomad visa', url: 'https://www.nyilvantarto.hu' },
+        { label: 'Expatica — Hungary visa guide', url: 'https://www.expatica.com/hu/moving/visas/hungary-visa-guide/' },
+      ],
+    },
+  },
+
+  // ── Ireland ────────────────────────────────────────────────────────────────
+  'IE': {
+    climate: {
+      text: 'Ireland has a mild, humid Atlantic climate with remarkably consistent temperatures year-round. Dublin averages around 20°C in summer and 5–8°C in winter — rarely very hot or very cold. Rainfall is frequent throughout the year, and overcast days predominate; Dublin receives only about 1,400 sun hours annually. The west of Ireland (Galway, Kerry, Connemara) is wetter and windier. The southeast (Wexford, Waterford) is the sunniest region. Ireland rewards those who appreciate dramatic green landscapes and cosy indoor culture rather than outdoor sunshine.',
+      sources: [
+        { label: 'Ireland climate — Met Éireann', url: 'https://www.met.ie/climate' },
+        { label: 'Ireland weather overview', url: 'https://www.weather-atlas.com/en/ireland' },
+      ],
+    },
+    lgbtq_orient: {
+      text: 'Ireland became the first country in the world to legalise same-sex marriage by popular referendum in May 2015, with 62% voting in favour — a remarkable shift for a country where homosexuality was illegal until 1993. Full equality under the Marriage Act includes joint adoption, equal inheritance, and all spousal rights. Anti-discrimination protections are comprehensive under the Equal Status Acts. Ireland is consistently ranked among the world\'s most LGBTQ-friendly countries.',
+      sources: [
+        { label: 'Ireland — Equaldex', url: 'https://www.equaldex.com/region/ie' },
+        { label: 'ILGA Europe — Ireland', url: 'https://www.ilga-europe.org/country/ireland/' },
+      ],
+    },
+    lgbtq_gender: {
+      text: 'Ireland\'s Gender Recognition Act 2015 allows adults to change their legal gender by statutory declaration, with no medical requirements — one of the most progressive frameworks globally at the time. Those aged 16–17 require parental consent or a court order. A review of extending recognition to under-16s and non-binary individuals has been debated since 2018. Non-binary recognition is not yet available in Irish documents.',
+      sources: [
+        { label: 'TGEU Trans Rights Map — Ireland', url: 'https://transrightsmap.tgeu.org/home/' },
+        { label: 'Ireland — Equaldex', url: 'https://www.equaldex.com/region/ie' },
+      ],
+    },
+    lgbtq_social: {
+      text: 'Social acceptance is extremely high, particularly in Dublin and other urban areas. LGBTQ community life is vibrant and well-integrated into Irish culture. Dublin\'s annual Pride parade is one of the largest events in the country. Rural Ireland is more conservative — the influence of the Catholic Church remains culturally significant, though declining among younger generations. The transformation from one of Europe\'s most conservative Catholic societies to one of its most socially progressive over 30 years is striking.',
+      sources: [
+        { label: 'Eurobarometer — LGBTQ acceptance in Ireland', url: 'https://europa.eu/eurobarometer/' },
+        { label: 'Ireland — Equaldex social acceptance', url: 'https://www.equaldex.com/region/ie' },
+      ],
+    },
+    racial: {
+      text: 'Ireland has become significantly more diverse since the mid-1990s economic boom, with substantial immigration from Brazil, Nigeria, India, the Philippines, Poland, and China. Dublin is genuinely multicultural. However, racism has become a more visible issue in recent years, with anti-immigration protests and far-right activity increasing since 2022. Black Irish people report discrimination in housing and employment. In smaller towns and rural areas, diversity is low and POC can experience more social friction.',
+      sources: [
+        { label: 'Irish Human Rights and Equality Commission — racism report', url: 'https://www.ihrec.ie' },
+        { label: 'ESRI — discrimination in Ireland', url: 'https://www.esri.ie' },
+      ],
+    },
+    safety: {
+      text: 'Ireland is a very safe country. Violent crime rates are low. Dublin has some issues with drug-related crime in specific areas (north inner city) and occasional gang-related incidents, but these rarely affect visitors or typical residents. Political stability is high, though the housing and cost-of-living crisis has generated significant social tension in recent years.',
+      sources: [
+        { label: 'Global Peace Index — Ireland', url: 'https://www.visionofhumanity.org/maps/' },
+        { label: 'CSO — crime statistics Ireland', url: 'https://www.cso.ie/en/statistics/crimeandjustice/' },
+      ],
+    },
+    healthcare: {
+      text: 'Ireland\'s public healthcare system (HSE — Health Service Executive) is universal in theory but significantly underfunded in practice. Public GP visits are charged (€50–70 per visit unless on a GP card); hospital emergency care is free. Waiting lists for specialist appointments and elective procedures can be very long. Private health insurance (VHI, Laya, Irish Life) is widely held (around 50% of the population) and recommended for faster access. Private GP clinics are efficient and widely available.',
+      sources: [
+        { label: 'HSE — Ireland health system', url: 'https://www.hse.ie' },
+        { label: 'Euro Health Consumer Index', url: 'https://healthpowerhouse.com/publications/' },
+      ],
+    },
+    cost_value: {
+      text: 'Ireland is expensive, with Dublin being one of the highest-cost capitals in Europe. The housing crisis is acute — a one-bedroom apartment in central Dublin costs €2,000–3,000/month to rent, and purchase prices have risen dramatically. Food, childcare, and services are also significantly above the European average. Outside Dublin, costs are considerably lower. The Republic benefits from one of the strongest economies in the EU, and salaries in the tech and pharmaceutical sectors are high. But for those moving on a modest foreign income, Dublin is very challenging.',
+      sources: [
+        { label: 'Numbeo — cost of living in Ireland', url: 'https://www.numbeo.com/cost-of-living/country_result.jsp?country=Ireland' },
+        { label: 'Expatistan — Dublin cost of living', url: 'https://www.expatistan.com/cost-of-living/dublin' },
+      ],
+    },
+    visa: {
+      text: 'EU/EEA citizens have free movement. Ireland is not part of the Schengen Area but has the Common Travel Area (CTA) with the UK. For non-EU nationals, Ireland has no dedicated digital nomad visa as of 2025. Long-stay options include employment permits (Critical Skills, General Employment), the Stamp 0 for those with passive or pension income (minimum €50,000/year), and the Stamp 4 for family members. A proposed "Digital Nomad" visa has been discussed but not yet launched. Non-EU residents typically need employer sponsorship for long-term legal stay.',
+      sources: [
+        { label: 'INIS — Irish immigration service', url: 'https://www.irishimmigration.ie' },
+        { label: 'Expatica — Ireland visa guide', url: 'https://www.expatica.com/ie/moving/visas/ireland-visa-guide/' },
+      ],
+    },
+  },
+
+  // ── Israel ─────────────────────────────────────────────────────────────────
+  'IL': {
+    climate: {
+      text: 'Israel has highly varied microclimates. The Mediterranean coast (Tel Aviv, Haifa) has a classic Mediterranean climate — hot dry summers (28–34°C), mild wet winters (12–17°C), and over 3,000 sun hours per year. Jerusalem at higher altitude has cooler winters, occasionally with snow. The Jordan Valley and Dead Sea region are extremely hot and arid. The Negev Desert occupies the southern half of the country. The north (Galilee) is greener and cooler. For sun seekers, the Tel Aviv coast and Eilat on the Red Sea (year-round warmth) are exceptional.',
+      sources: [
+        { label: 'Israel climate — IMS', url: 'https://ims.gov.il/en/ClimateAtlas' },
+        { label: 'Israel weather overview', url: 'https://www.weather-atlas.com/en/israel' },
+      ],
+    },
+    lgbtq_orient: {
+      text: 'Israel is the most LGBTQ-inclusive country in the Middle East by a wide margin. Homosexuality was decriminalised in 1988. Same-sex couples cannot marry domestically but same-sex marriages performed abroad are legally recognised and registered. Joint adoption has been limited, though single-parent adoption is available to LGBTQ individuals. Anti-discrimination protections cover employment and services. Tel Aviv is internationally recognised as one of the world\'s most LGBTQ-welcoming cities, with a huge annual Pride parade.',
+      sources: [
+        { label: 'Israel — Equaldex', url: 'https://www.equaldex.com/region/il' },
+        { label: 'GayTelAviv — official tourism', url: 'https://www.gaytelaviv.com' },
+      ],
+    },
+    lgbtq_gender: {
+      text: 'Legal gender recognition exists but requires court proceedings, psychological assessment, and evidence of "living as" the target gender. There is no simple self-declaration process. Non-binary identities have no legal recognition. The Israeli Medical Association supports access to gender-affirming healthcare. The overall framework is more liberal than most of the Middle East but more restrictive than leading European countries.',
+      sources: [
+        { label: 'TGEU Trans Rights Map — Israel', url: 'https://transrightsmap.tgeu.org/home/' },
+        { label: 'Israel — Equaldex', url: 'https://www.equaldex.com/region/il' },
+      ],
+    },
+    lgbtq_social: {
+      text: 'Tel Aviv is extraordinarily LGBTQ-affirming — consistently ranked in the top five gay-friendly cities in the world. The city hosts one of the largest Pride parades globally. Jerusalem is significantly more conservative, with large ultra-Orthodox and Arab communities where LGBTQ visibility carries real risk. Outside the major urban centres, acceptance varies sharply. Israeli LGBTQ organisations are active and well-funded. The ongoing conflict and political shifts rightward since 2023 have introduced some uncertainty about the future direction of rights.',
+      sources: [
+        { label: 'Tel Aviv Gay Pride — official site', url: 'https://tlvpride.com' },
+        { label: 'Israel — Equaldex social acceptance', url: 'https://www.equaldex.com/region/il' },
+      ],
+    },
+    racial: {
+      text: 'Israel is a complex, multicultural society with significant internal racial tensions. Ashkenazi (European-origin), Mizrahi (Middle Eastern/North African), and Ethiopian Jewish communities have documented experiences of discrimination within Israeli society. Arab citizens (around 20% of the population) face systemic inequalities in housing, employment, and political representation. African asylum seekers (mainly Eritrean and Sudanese) have experienced particularly harsh treatment including detention. For international travellers and expats, Tel Aviv is cosmopolitan and welcoming, but the broader societal context is important to understand.',
+      sources: [
+        { label: 'Association for Civil Rights in Israel', url: 'https://www.acri.org.il/en/' },
+        { label: 'Adalah — Arab minority rights', url: 'https://www.adalah.org/en' },
+      ],
+    },
+    safety: {
+      text: 'The security situation in Israel is complex and context-dependent. Tel Aviv itself has very low street crime and is generally safe day-to-day. However, the broader regional conflict — particularly following the October 7, 2023 Hamas attack and subsequent war in Gaza — has significantly elevated security risk. Rocket warnings, Iron Dome interceptions, and regional tensions are real. Many governments maintain elevated travel warnings. The situation varies significantly by location within Israel and changes with regional developments.',
+      sources: [
+        { label: 'Israel travel advice — UK FCDO', url: 'https://www.gov.uk/foreign-travel-advice/israel' },
+        { label: 'Israel travel advice — US State Department', url: 'https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/IsraelandtheWestBank.html' },
+      ],
+    },
+    healthcare: {
+      text: 'Israel has an excellent universal healthcare system based on four competing health funds (Kupot Holim). All residents are covered under the National Health Insurance Law. Quality of care is very high — Israel ranks among the top globally in healthcare outcomes, life expectancy, and medical research. Access to specialists, hospitals, and preventive care is good. Dental and optical care require supplementary insurance.',
+      sources: [
+        { label: 'Israel health system — Ministry of Health', url: 'https://www.health.gov.il/English/Pages/HomePage.aspx' },
+        { label: 'WHO — Israel health profile', url: 'https://www.who.int/countries/isr/' },
+      ],
+    },
+    cost_value: {
+      text: 'Israel — and Tel Aviv in particular — has become one of the more expensive places to live globally. Tel Aviv consistently ranks among the world\'s most expensive cities in the Economist Intelligence Unit cost-of-living index. Housing is very expensive, dining out is costly, and everyday goods carry high prices partly due to protectionist import policies. Jerusalem and peripheral cities are more affordable. For those earning in strong foreign currencies, the cost is manageable but not cheap.',
+      sources: [
+        { label: 'Numbeo — cost of living in Israel', url: 'https://www.numbeo.com/cost-of-living/country_result.jsp?country=Israel' },
+        { label: 'EIU cost of living rankings', url: 'https://www.eiu.com/n/cost-of-living/' },
+      ],
+    },
+    visa: {
+      text: 'Many nationalities can enter Israel visa-free for up to 90 days for tourism. There is no dedicated digital nomad visa as of 2025. Long-term legal residency typically requires employment by an Israeli company, marriage to an Israeli citizen, or eligibility for Aliyah (immigration for Jewish diaspora). The Law of Return grants citizenship to those with Jewish heritage. The current security situation and regional conflict make long-term planning more uncertain than in previous years.',
+      sources: [
+        { label: 'Israel visa information — Ministry of Foreign Affairs', url: 'https://visas.gov.il' },
+        { label: 'Aliyah — Jewish Agency', url: 'https://www.jewishagency.org/aliyah/' },
+      ],
+    },
+  },
+
+  // ── India ──────────────────────────────────────────────────────────────────
+  'IN': {
+    climate: {
+      text: 'India is vast and has almost every climate on earth. The tropical south (Kerala, Goa, Tamil Nadu) is hot and humid year-round (27–35°C) with a heavy monsoon from June to September. The northern plains (Delhi, UP, Rajasthan) experience extreme seasons — scorching summers above 40°C and cool winters. Bangalore (Bengaluru) at high altitude has an exceptionally pleasant climate — 18–28°C year-round — and is popular with expats. The Himalayan foothills (Himachal Pradesh, Uttarakhand) are cool and scenic. The northeast is very wet. Whatever your climate preference, some part of India is likely to match it.',
+      sources: [
+        { label: 'India climate — IMD', url: 'https://imd.gov.in/pages/climate.php' },
+        { label: 'India climate overview — BBC Weather', url: 'https://www.bbc.com/weather/1269750' },
+      ],
+    },
+    lgbtq_orient: {
+      text: 'India decriminalised consensual same-sex activity in 2018, when the Supreme Court struck down Section 377 of the Indian Penal Code in a landmark ruling. However, same-sex relationships have no legal recognition — in October 2023 the Supreme Court declined to rule in favour of same-sex marriage, holding that this was a matter for Parliament. Anti-discrimination protections are limited. The legal environment varies significantly between states, and LGBTQ rights depend heavily on the political climate at both central and state levels.',
+      sources: [
+        { label: 'India — Equaldex', url: 'https://www.equaldex.com/region/in' },
+        { label: 'Supreme Court ruling — Navtej Singh Johar v. Union of India 2018', url: 'https://main.sci.gov.in' },
+      ],
+    },
+    lgbtq_gender: {
+      text: 'India legally recognised a "third gender" (Hijra and transgender persons) following a landmark 2014 Supreme Court ruling (NALSA v. Union of India). The Transgender Persons (Protection of Rights) Act 2019 provides some protections but has been criticised by trans rights advocates for requiring a certification process. Access to gender-affirming healthcare is very limited outside major metropolitan areas. The Hijra community has a long cultural history but faces significant social marginalisation.',
+      sources: [
+        { label: 'NALSA judgment 2014 — Supreme Court', url: 'https://main.sci.gov.in' },
+        { label: 'India — Equaldex', url: 'https://www.equaldex.com/region/in' },
+      ],
+    },
+    lgbtq_social: {
+      text: 'Urban India — particularly Mumbai, Delhi, Bangalore, and Kolkata — has increasingly visible and active LGBTQ communities with annual Pride events, dedicated venues, and advocacy organisations. The contrast with rural India is stark: outside cities, family and community pressure to conform to heterosexual marriage norms is intense, and open LGBTQ identity carries real risk of ostracism or violence. The social landscape is rapidly changing for younger urban Indians but remains deeply conservative for the majority of the country\'s population.',
+      sources: [
+        { label: 'Humsafar Trust — LGBTQ advocacy India', url: 'https://www.humsafar.org' },
+        { label: 'India — Equaldex social acceptance', url: 'https://www.equaldex.com/region/in' },
+      ],
+    },
+    racial: {
+      text: 'India is an enormously complex multi-ethnic, multi-caste, and multi-racial society. Colourism (preferential treatment of lighter skin) is pervasive. Caste discrimination — though illegal — remains significant in many areas. Visitors from African countries report high rates of staring, curiosity, and occasional discrimination, particularly in northern cities. East Asian-presenting people are similarly visible. White Western visitors are generally received positively. The experience varies dramatically by city, class context, and region.',
+      sources: [
+        { label: 'Racism in India — OHCHR reports', url: 'https://www.ohchr.org/en/countries/asia/india' },
+        { label: 'African students in India — media coverage', url: 'https://www.bbc.com/news/world-asia-india' },
+      ],
+    },
+    safety: {
+      text: 'Safety varies enormously across India. The main concerns for expats include traffic accidents (India has high road fatality rates), petty theft in tourist areas, and for women, sexual harassment (which is well-documented, particularly in northern India). South India (Kerala, Karnataka, Tamil Nadu) and Goa are generally considered safer for women and visitors. Delhi and some northern states have higher reported rates of violent crime. The political situation is stable, though religious tensions have increased in some states under the current BJP government.',
+      sources: [
+        { label: 'India travel advice — UK FCDO', url: 'https://www.gov.uk/foreign-travel-advice/india' },
+        { label: 'Global Peace Index — India', url: 'https://www.visionofhumanity.org/maps/' },
+      ],
+    },
+    healthcare: {
+      text: 'India has a two-tier healthcare system. Private hospitals in major cities (Apollo, Fortis, Manipal, Max Healthcare) are world-class — high quality, modern equipment, and staffed by well-trained doctors, at a fraction of Western costs. Medical tourism to India is substantial precisely because of this. Public healthcare is significantly underfunded, understaffed, and of highly variable quality. For expats, comprehensive private health insurance covering private hospital access is strongly recommended.',
+      sources: [
+        { label: 'India health overview — WHO', url: 'https://www.who.int/countries/ind/' },
+        { label: 'Apollo Hospitals — medical tourism', url: 'https://www.apollohospitals.com' },
+      ],
+    },
+    cost_value: {
+      text: 'India offers outstanding value for those earning in stronger currencies. The cost of living is among the lowest globally for quality of life offered. A comfortable furnished apartment in Bangalore or Goa costs ₹30,000–80,000/month (roughly €330–880 at 2024 rates). Domestic food and transport are very cheap. Household help, food delivery, and entertainment are all extremely affordable. India is one of the best-value destinations in the world for digital nomads and those with remote income.',
+      sources: [
+        { label: 'Numbeo — cost of living in India', url: 'https://www.numbeo.com/cost-of-living/country_result.jsp?country=India' },
+        { label: 'Expatistan — Bangalore cost of living', url: 'https://www.expatistan.com/cost-of-living/bangalore' },
+      ],
+    },
+    visa: {
+      text: 'India\'s e-Visa system allows citizens of most countries to apply online for tourism, business, or medical visas for stays of 30–180 days. India does not have a dedicated digital nomad visa. Long-term residency options are limited — typically available through employment by an Indian company, marriage to an Indian national, or OCI (Overseas Citizen of India) status for those of Indian descent. Many digital nomads use rolling tourist visas in a grey-area arrangement. The OCI card is a popular option for diaspora members, giving lifelong visa-free entry.',
+      sources: [
+        { label: 'India e-Visa — indianvisaonline.gov.in', url: 'https://indianvisaonline.gov.in' },
+        { label: 'OCI card — Ministry of Home Affairs India', url: 'https://www.mha.gov.in' },
+      ],
+    },
+  },
+
+  // ── Iceland ────────────────────────────────────────────────────────────────
+  'IS': {
+    climate: {
+      text: 'Iceland has a sub-Arctic oceanic climate. Reykjavík averages 13°C in summer and around 0°C in winter — rarely severely cold but consistently cool, windy, and highly changeable. The famous phrase "if you don\'t like the weather, wait five minutes" is apt. Summer brings the midnight sun (24-hour daylight in June), dramatic landscapes, and lush green valleys. Winter offers the Northern Lights from October to March but only 4–5 hours of daylight at the solstice. Iceland gets around 1,300 sun hours per year. A destination for those drawn to extreme natural beauty rather than warmth.',
+      sources: [
+        { label: 'Iceland climate — IMO', url: 'https://en.vedur.is/climate/climate-in-iceland/' },
+        { label: 'Iceland weather overview', url: 'https://www.weather-atlas.com/en/iceland' },
+      ],
+    },
+    lgbtq_orient: {
+      text: 'Iceland legalised same-sex marriage in June 2010, with full equality including adoption, medically assisted reproduction for same-sex couples, and all spousal rights. Former Prime Minister Jóhanna Sigurðardóttir (2009–2013) was the world\'s first openly gay head of government. Anti-discrimination protections are comprehensive. Iceland consistently ranks in the top three in Europe on the ILGA-Europe Rainbow Map.',
+      sources: [
+        { label: 'Iceland — Equaldex', url: 'https://www.equaldex.com/region/is' },
+        { label: 'ILGA Europe — Iceland', url: 'https://www.ilga-europe.org/country/iceland/' },
+      ],
+    },
+    lgbtq_gender: {
+      text: 'Iceland has allowed self-declaration of legal gender since June 2019, with no medical requirements for adults or for those aged 15–18 with parental or guardian consent. Non-binary gender recognition (the "X" option) became available from January 2020 — Iceland was among the first countries globally to offer this. TGEU consistently ranks Iceland first or second in Europe for trans rights.',
+      sources: [
+        { label: 'TGEU Trans Rights Map — Iceland', url: 'https://transrightsmap.tgeu.org/home/' },
+        { label: 'Iceland — Equaldex', url: 'https://www.equaldex.com/region/is' },
+      ],
+    },
+    lgbtq_social: {
+      text: 'Iceland has among the highest LGBTQ acceptance rates globally. The small population (380,000) means the LGBTQ community is integrated into mainstream society rather than separated into specific enclaves. Reykjavík Pride (Hinsegin dagar) is proportionally one of the largest Pride festivals in the world, regularly drawing over 100,000 attendees — a quarter of the national population. Being LGBTQ in Iceland is thoroughly normalised across most social contexts.',
+      sources: [
+        { label: 'Reykjavík Pride — hinsegintt.is', url: 'https://www.hinsegintt.is' },
+        { label: 'Eurobarometer — LGBTQ acceptance', url: 'https://europa.eu/eurobarometer/' },
+      ],
+    },
+    racial: {
+      text: 'Iceland is historically among the most ethnically homogeneous countries in Europe, with a growing immigrant population (mainly from Poland, Lithuania, the Philippines, and Thailand). Being visibly "different" in Iceland attracts curiosity rather than hostility in most cases — Icelanders tend to be politely reserved. People of colour report microaggressions are relatively uncommon, though the country\'s homogeneity means some social awkwardness is possible. Violent racism is very rare.',
+      sources: [
+        { label: 'Statistics Iceland — population', url: 'https://www.statice.is/statistics/population/' },
+        { label: 'Iceland review — expat experiences', url: 'https://www.expatexchange.com/ctryguide/11/63/Iceland/' },
+      ],
+    },
+    safety: {
+      text: 'Iceland is consistently ranked as one of the top two safest countries in the world on the Global Peace Index, alongside New Zealand. Violent crime is extremely rare. There is no military. The main safety concerns are natural — volcanic eruptions, earthquakes, sudden weather changes in the highlands, and dangerous ocean surf. Urban safety in Reykjavík is excellent.',
+      sources: [
+        { label: 'Global Peace Index — Iceland', url: 'https://www.visionofhumanity.org/maps/' },
+        { label: 'Iceland safety — Safetravel.is', url: 'https://safetravel.is' },
+      ],
+    },
+    healthcare: {
+      text: 'Iceland has a universal healthcare system funded by social insurance (Sjúkratrygging Íslands). Quality is high and care is free or heavily subsidised for registered residents. The system is relatively small due to the population size, and some specialist services require travel to mainland Europe for complex procedures. GPs are accessible and prescription costs are subsidised.',
+      sources: [
+        { label: 'Sjúkratrygging Íslands — health insurance', url: 'https://www.sjukra.is/english/' },
+        { label: 'WHO — Iceland health profile', url: 'https://www.who.int/countries/isl/' },
+      ],
+    },
+    cost_value: {
+      text: 'Iceland is one of the most expensive countries in Europe. Everything carries a premium: groceries, restaurant meals, accommodation, alcohol, and services are significantly above Scandinavian averages, which are themselves above Western European averages. A one-bedroom apartment in central Reykjavík costs ISK 220,000–350,000/month (roughly €1,450–2,300). Local salaries are high, partially compensating, but for those relocating on a foreign income, Iceland represents poor value for money.',
+      sources: [
+        { label: 'Numbeo — cost of living in Iceland', url: 'https://www.numbeo.com/cost-of-living/country_result.jsp?country=Iceland' },
+        { label: 'Expatistan — Reykjavík cost of living', url: 'https://www.expatistan.com/cost-of-living/reykjavik' },
+      ],
+    },
+    visa: {
+      text: 'Iceland is a member of the EEA and Schengen but not the EU. EU/EEA citizens have freedom of movement and can live and work in Iceland freely. Non-EEA nationals require a residence permit — typically through employment, family reunification, or study. Iceland does not have a dedicated digital nomad visa as of 2025. Non-EEA remote workers must typically have a local job offer or establish a company in Iceland. Icelandic citizenship is available after 4 years of legal residence.',
+      sources: [
+        { label: 'Directorate of Immigration — Iceland', url: 'https://www.utl.is/index.php/en/' },
+        { label: 'Expatica — Iceland visa guide', url: 'https://www.expatica.com/is/moving/visas/' },
+      ],
+    },
+  },
+
+  // ── Italy ──────────────────────────────────────────────────────────────────
+  'IT': {
+    climate: {
+      text: 'Italy spans three distinct climate zones. The north (Milan, Turin, Venice) has a continental Po Valley climate — humid, foggy winters with frequent frost and warm, humid summers (28–32°C). Central Italy (Florence, Rome) is Mediterranean — warm sunny summers, mild winters, and around 2,500 sun hours per year in Rome. Southern Italy, Sicily, and Sardinia have a hot Mediterranean climate with very hot dry summers (35–40°C), very mild winters, and 2,700–3,000 sun hours. Calabria, Sicily, and Sardinia are among the sunniest places in Europe. Italy can suit almost any climate preference within its territory.',
+      sources: [
+        { label: 'Italy climate — ISPRA', url: 'https://www.isprambiente.gov.it' },
+        { label: 'Italy weather overview', url: 'https://www.weather-atlas.com/en/italy' },
+      ],
+    },
+    lgbtq_orient: {
+      text: 'Italy legalised civil unions (unioni civili) for same-sex couples in May 2016, providing many but not all marital rights. Full same-sex marriage and joint adoption rights remain unavailable — Italy is among the more conservative Western European countries on this issue. Anti-discrimination laws cover employment and access to services. The Meloni government elected in 2022 has acted to restrict the registration of children with two same-sex parents in some municipalities, creating legal uncertainty for same-sex families.',
+      sources: [
+        { label: 'Italy — Equaldex', url: 'https://www.equaldex.com/region/it' },
+        { label: 'ILGA Europe — Italy', url: 'https://www.ilga-europe.org/country/italy/' },
+      ],
+    },
+    lgbtq_gender: {
+      text: 'Legal gender recognition in Italy requires a court order and evidence of a "physical adaptation process" — in practice, hormone therapy and often surgery are expected. There is no self-declaration process, and the framework is considered burdensome by European standards. Non-binary identities are not legally recognised. TGEU rates Italy in the middle of the EU on trans rights.',
+      sources: [
+        { label: 'TGEU Trans Rights Map — Italy', url: 'https://transrightsmap.tgeu.org/home/' },
+        { label: 'Italy — Equaldex', url: 'https://www.equaldex.com/region/it' },
+      ],
+    },
+    lgbtq_social: {
+      text: 'Social acceptance is high in northern and central Italian cities — Milan, Bologna, Florence, and parts of Rome have active, visible LGBTQ communities. Milan Pride (Milano Pride) is one of the largest in Europe. Bologna has historically been considered Italy\'s most progressive city. Acceptance drops significantly in southern Italy and in smaller towns, where Catholic Church influence and conservative family values remain strong. The Meloni government\'s rhetoric has emboldened some anti-LGBTQ sentiment nationally.',
+      sources: [
+        { label: 'Milano Pride', url: 'https://www.milanopride.it' },
+        { label: 'Eurobarometer — LGBTQ acceptance in Italy', url: 'https://europa.eu/eurobarometer/' },
+      ],
+    },
+    racial: {
+      text: 'Italy has significant diversity from immigration, with large communities from North Africa (Morocco, Tunisia), Sub-Saharan Africa, South Asia, China, Eastern Europe, and Latin America. Anti-Black racism and anti-African migrant sentiment are documented and have increased in political discourse. Afro-Italian people report discrimination in housing, employment, and public spaces. Asian (primarily Chinese) communities face some discrimination. Northern cities are generally more cosmopolitan; the south has had particular tensions around African migrants and arrivals. The situation for established middle-class POC expats is different from the conditions faced by migrants.',
+      sources: [
+        { label: 'FRA — Being Black in the EU', url: 'https://fra.europa.eu/en/publication/2023/being-black-eu' },
+        { label: 'UNAR — anti-discrimination Italy', url: 'https://www.unar.it' },
+      ],
+    },
+    safety: {
+      text: 'Italy is generally safe. Violent crime is low by global standards. The main risks for visitors and expats are petty crime — pickpocketing and bag snatching in tourist areas (particularly Naples, Rome Termini, and central Florence), and occasional scams. Organised crime (Camorra in Naples/Campania, \'Ndrangheta in Calabria, Cosa Nostra in Sicily) operates but rarely affects ordinary life or expats. Southern coastal cities have seen some tensions around migration.',
+      sources: [
+        { label: 'Global Peace Index — Italy', url: 'https://www.visionofhumanity.org/maps/' },
+        { label: 'Italy travel advice — UK FCDO', url: 'https://www.gov.uk/foreign-travel-advice/italy' },
+      ],
+    },
+    healthcare: {
+      text: 'Italy\'s Servizio Sanitario Nazionale (SSN) provides universal public healthcare free at the point of use for residents (including those registered as residents via residency registration — the "anagrafe"). Quality is excellent in the north (Emilia-Romagna, Lombardy, Veneto) and adequate in central Italy; the south is significantly less well-resourced. Private healthcare is widely used and affordable. Many expats use a combination — public for major procedures, private for speed and English-language consultations.',
+      sources: [
+        { label: 'Italy health system — Ministero della Salute', url: 'https://www.salute.gov.it/portale/home.html' },
+        { label: 'Euro Health Consumer Index', url: 'https://healthpowerhouse.com/publications/' },
+      ],
+    },
+    cost_value: {
+      text: 'Italy\'s cost of living varies enormously. Milan is the most expensive city — comparable to other major European capitals. Rome and Florence are moderate. Southern Italy, Sicily, Sardinia, and smaller towns throughout the country offer outstanding value — among the best in Western Europe. A one-bedroom apartment in a small Puglia town can be rented for €400–600/month; Sicily and Calabria are similar. The combination of Mediterranean climate, incredible food and wine culture, rich history, and low living costs in the south makes it one of the best-value propositions in Europe.',
+      sources: [
+        { label: 'Numbeo — cost of living in Italy', url: 'https://www.numbeo.com/cost-of-living/country_result.jsp?country=Italy' },
+        { label: 'Expatistan — Rome cost of living', url: 'https://www.expatistan.com/cost-of-living/rome' },
+      ],
+    },
+    visa: {
+      text: 'EU/EEA citizens have free movement. Italy launched a dedicated Digital Nomad Visa (Visto per lavoratori da remoto) in April 2024, available to non-EU nationals who work remotely for clients or employers outside Italy. Requirements include proof of employment or self-employment, a minimum income of approximately €28,000/year, and private health insurance. The initial visa is 1 year and can be converted to a 2-year residence permit. The Elective Residency Visa suits those with passive income. Italy also has a Startup Visa.',
+      sources: [
+        { label: 'Italy Digital Nomad Visa — Esteri.it', url: 'https://www.esteri.it/it/servizi-consolari-e-visti/' },
+        { label: 'Italy visa guide — Expatica', url: 'https://www.expatica.com/it/moving/visas/italy-visa-guide/' },
+      ],
+    },
+  },
+
+  // ── Japan ──────────────────────────────────────────────────────────────────
+  'JP': {
+    climate: {
+      text: 'Japan has four distinct seasons that vary by latitude. Hokkaido (north) has cold, snowy winters and cool summers. The main island of Honshu — including Tokyo, Osaka, and Kyoto — experiences hot humid summers (28–34°C) with a rainy season (tsuyu) from June to July, mild to cold winters, and spectacular spring cherry blossom and autumn foliage seasons. Kyushu and Shikoku in the south are slightly warmer. Okinawa is subtropical — warm year-round (22–32°C). Typhoon season runs from July to October. Tokyo receives about 1,900 sun hours per year.',
+      sources: [
+        { label: 'Japan climate — JMA', url: 'https://www.jma.go.jp/jma/indexe.html' },
+        { label: 'Japan weather overview', url: 'https://www.weather-atlas.com/en/japan' },
+      ],
+    },
+    lgbtq_orient: {
+      text: 'Japan has no national same-sex marriage law, though the Supreme Court ruled in October 2024 that the lack of same-sex marriage is unconstitutional — a major milestone that is expected to prompt legislative action. Many major cities and prefectures (Tokyo, Osaka, Sapporo, Fukuoka, Kyoto) issue partnership certificates with local recognition benefits. Anti-discrimination protections at the national level are minimal for sexual orientation, though a broad human rights promotion law was passed in 2023. The direction is progressively improving, if slowly.',
+      sources: [
+        { label: 'Japan — Equaldex', url: 'https://www.equaldex.com/region/jp' },
+        { label: 'Marriage equality Japan — NHK World', url: 'https://www3.nhk.or.jp/nhkworld/' },
+      ],
+    },
+    lgbtq_gender: {
+      text: 'Japan requires gender reassignment surgery and sterilisation for legal gender marker changes — one of the most restrictive frameworks among developed nations. The Supreme Court ruled in 2023 that the sterilisation requirement was unconstitutional, beginning a reform process; by 2025 the law had been partially revised to remove the sterilisation requirement. Access to gender-affirming healthcare exists in major cities, though wait times can be long. Non-binary identity has no legal recognition.',
+      sources: [
+        { label: 'TGEU Trans Rights Map — Japan', url: 'https://transrightsmap.tgeu.org/home/' },
+        { label: 'Japan — Equaldex', url: 'https://www.equaldex.com/region/jp' },
+      ],
+    },
+    lgbtq_social: {
+      text: 'Japan\'s LGBTQ community is large, active, and increasingly visible. Tokyo\'s Shinjuku Ni-chome district is one of the world\'s densest concentrations of LGBTQ venues. Tokyo Rainbow Pride is one of Asia\'s largest Pride events. Younger Japanese show high rates of LGBTQ acceptance in surveys. The cultural norm of discretion about personal life means public displays of affection are uncommon for any couple. Japanese society tends toward tolerance through non-confrontation rather than active celebration, but the environment is generally safe and welcoming in urban areas.',
+      sources: [
+        { label: 'Tokyo Rainbow Pride', url: 'https://tokyorainbowpride.com' },
+        { label: 'Japan — Equaldex social acceptance', url: 'https://www.equaldex.com/region/jp' },
+      ],
+    },
+    racial: {
+      text: 'Japan is ethnically homogeneous (~98% Japanese) and has relatively low immigration. Foreign residents (gaijin) are visible and may encounter subtle discrimination — documented issues include difficulty renting apartments, refusal at some bars or establishments, and general social exclusion. Black individuals report staring and curiosity, and some negative stereotyping in media. However, violent racism is rare and Japan is generally physically safe. Western expats (particularly North American and European) typically have a positive experience, often being treated with curiosity and warmth.',
+      sources: [
+        { label: 'Japan racism overview — HRW', url: 'https://www.hrw.org/asia/japan' },
+        { label: 'Discrimination in Japan — UNHCR perspective', url: 'https://www.unhcr.org/jp/english/' },
+      ],
+    },
+    safety: {
+      text: 'Japan is one of the safest countries in the world for day-to-day personal security. Violent crime rates are extremely low and theft is uncommon. It is consistently in the top five on the Global Peace Index. The main safety considerations are natural disasters — Japan is one of the world\'s most seismically active countries, with regular earthquakes, occasional tsunamis (Pacific coast), and active volcanoes. The Japan Meteorological Agency provides excellent early warning systems.',
+      sources: [
+        { label: 'Global Peace Index — Japan', url: 'https://www.visionofhumanity.org/maps/' },
+        { label: 'Japan safety — JMA disaster portal', url: 'https://www.jma.go.jp/jma/indexe.html' },
+      ],
+    },
+    healthcare: {
+      text: 'Japan has universal health insurance (shakai hoken / kokumin kenko hoken), covering all residents — including registered foreigners. Patients pay 30% of costs (10–20% for elderly/children), with the rest covered by insurance. Quality is very high, and Japan has one of the world\'s highest life expectancies. Hospitals are well-equipped. A language barrier can be challenging for non-Japanese speakers — finding English-speaking doctors is possible in Tokyo and Osaka but may require effort.',
+      sources: [
+        { label: 'Japan healthcare overview — MHLW', url: 'https://www.mhlw.go.jp/english/' },
+        { label: 'WHO — Japan health profile', url: 'https://www.who.int/countries/jpn/' },
+      ],
+    },
+    cost_value: {
+      text: 'Japan\'s reputation for high costs has moderated significantly. A weak yen in 2023–2024 made Japan exceptionally affordable for those earning in USD or EUR. Tokyo — while a global city — is notably cheaper than New York, London, or Singapore for many categories. Local food (particularly convenience stores, ramen, sushi trains) is remarkably affordable. Housing varies: central Tokyo is expensive (¥150,000–250,000/month for a one-bedroom), but smaller cities and rural Japan are very affordable. Japan represents good value for the quality of life, infrastructure, food, and culture on offer.',
+      sources: [
+        { label: 'Numbeo — cost of living in Japan', url: 'https://www.numbeo.com/cost-of-living/country_result.jsp?country=Japan' },
+        { label: 'Expatistan — Tokyo cost of living', url: 'https://www.expatistan.com/cost-of-living/tokyo' },
+      ],
+    },
+    visa: {
+      text: 'Japan launched a Digital Nomad Visa in March 2024 for stays up to 6 months, available to nationals of countries with tax treaties with Japan who earn a minimum of ¥10 million (~€62,000) annually. Tourist entry is visa-free for most nationalities for up to 90 days. Longer-term residency typically requires employer sponsorship through a Highly Skilled Professional Visa, a Business Manager Visa, or marriage to a Japanese national. The immigration system has historically been strict, but recent labour shortages have prompted Japan to open up visa pathways more than before.',
+      sources: [
+        { label: 'Japan Digital Nomad Visa — MOFA', url: 'https://www.mofa.go.jp/j_info/visit/visa/long/digital_nomad.html' },
+        { label: 'Japan visa guide — Expatica', url: 'https://www.expatica.com/jp/moving/visas/japan-visa-guide/' },
+      ],
+    },
+  },
+
+  // ── South Korea ────────────────────────────────────────────────────────────
+  'KR': {
+    climate: {
+      text: 'South Korea has four distinct seasons. Summers (June–August) are hot and humid, with temperatures of 25–33°C and a monsoon season (jangma) bringing heavy rainfall. Winters (December–February) are cold and dry, often below 0°C in Seoul. Spring and autumn are brief but beautiful — cherry blossom season in April is spectacular. Seoul receives around 2,000 sun hours per year. The southern coast and Jeju Island are warmer and slightly milder. A good destination for those who enjoy defined seasons.',
+      sources: [
+        { label: 'Korea climate — KMA', url: 'https://www.weather.go.kr/w/index.do' },
+        { label: 'Korea weather overview', url: 'https://www.weather-atlas.com/en/south-korea' },
+      ],
+    },
+    lgbtq_orient: {
+      text: 'South Korea has no same-sex marriage, civil union, or comprehensive anti-discrimination law covering sexual orientation at national level. Homosexuality is not illegal (decriminalised in 1948) and military same-sex relations were recriminalised and then decriminalised again by the Constitutional Court in 2022. In 2024 the Supreme Court ruled that same-sex couples must receive equal health insurance coverage — a small but significant step. National legislation on partnership recognition has not been passed. LGBTQ rights protections remain among the weakest in OECD countries.',
+      sources: [
+        { label: 'South Korea — Equaldex', url: 'https://www.equaldex.com/region/kr' },
+        { label: 'Korean Queer Culture Festival', url: 'https://www.kqcf.org' },
+      ],
+    },
+    lgbtq_gender: {
+      text: 'Legal gender marker change is technically available in South Korea via a court process, which in practice requires evidence of surgery and sterilisation — one of the most restrictive frameworks among developed nations. Non-binary identities have no legal recognition. Access to gender-affirming healthcare exists in major cities privately. The situation is very challenging compared to other high-income countries.',
+      sources: [
+        { label: 'TGEU Trans Rights Map — South Korea', url: 'https://transrightsmap.tgeu.org/home/' },
+        { label: 'South Korea — Equaldex', url: 'https://www.equaldex.com/region/kr' },
+      ],
+    },
+    lgbtq_social: {
+      text: 'Seoul — particularly the Itaewon neighbourhood — has a visible LGBTQ community with dedicated bars, clubs, and community spaces. The annual Seoul Queer Culture Festival is one of the largest Pride events in Asia, though it consistently faces large religious and conservative counter-protests. Outside Seoul, LGBTQ visibility is very low. Confucian family values create intense social pressure to marry heterosexually. Younger generations are considerably more accepting than older, and corporate Korea is slowly introducing diversity policies, but the overall social climate remains difficult.',
+      sources: [
+        { label: 'Korean Queer Culture Festival', url: 'https://www.kqcf.org' },
+        { label: 'South Korea — Equaldex social acceptance', url: 'https://www.equaldex.com/region/kr' },
+      ],
+    },
+    racial: {
+      text: 'South Korea is highly ethnically homogeneous (~98% Korean) and has historically had a strong monocultural identity. Attitudes toward race are changing with increased internationalisation. White Western expats (particularly English teachers and corporate expats) generally have a positive, even privileged experience. Southeast Asian migrants and workers face documented discrimination and lower social status. Black individuals report mixed experiences including staring, curiosity, and occasional incidents of bias. Colourism (preference for light skin) is deeply embedded in Korean beauty standards and culture.',
+      sources: [
+        { label: 'HRW — discrimination in South Korea', url: 'https://www.hrw.org/asia/south-korea' },
+        { label: 'NHRCK — National Human Rights Commission of Korea', url: 'https://www.humanrights.go.kr/site/main/index002' },
+      ],
+    },
+    safety: {
+      text: 'South Korea is very safe for day-to-day personal security. Crime rates are low, particularly violent crime. Seoul is considered one of the safest major cities in the world. The North Korea threat is a background political factor — periodic military exercises, missile tests, and hostile rhetoric — but the risk to daily life in Seoul has been consistently low for decades. Natural disaster risk is relatively low compared to Japan.',
+      sources: [
+        { label: 'Global Peace Index — South Korea', url: 'https://www.visionofhumanity.org/maps/' },
+        { label: 'South Korea travel advice — UK FCDO', url: 'https://www.gov.uk/foreign-travel-advice/south-korea' },
+      ],
+    },
+    healthcare: {
+      text: 'South Korea has an excellent universal healthcare system (NHIS — National Health Insurance Service) with mandatory enrollment for all residents, including registered foreigners. Quality of care is very high — South Korea has world-class hospitals, cutting-edge medical technology, and is a major medical tourism destination. Patient co-payments exist (typically 20–30%) but overall costs are low by international standards. English-speaking services are available in major hospitals in Seoul.',
+      sources: [
+        { label: 'NHIS — South Korea health insurance', url: 'https://www.nhis.or.kr/english/wbheab01800m01.do' },
+        { label: 'WHO — South Korea health profile', url: 'https://www.who.int/countries/kor/' },
+      ],
+    },
+    cost_value: {
+      text: 'Seoul is an expensive major city, though moderate compared to Tokyo, Singapore, or Hong Kong. Housing has risen significantly — a one-bedroom apartment in central Seoul costs ₩1.5–2.5 million/month (roughly €1,000–1,700 at 2024 rates). Transport and local food are affordable. Eating out at Korean restaurants is excellent value — a quality meal costs ₩8,000–15,000 (€6–11). The Jeonse rental deposit system (lump-sum deposit instead of monthly rent) is unique and can be cost-effective for those with capital.',
+      sources: [
+        { label: 'Numbeo — cost of living in South Korea', url: 'https://www.numbeo.com/cost-of-living/country_result.jsp?country=South+Korea' },
+        { label: 'Expatistan — Seoul cost of living', url: 'https://www.expatistan.com/cost-of-living/seoul' },
+      ],
+    },
+    visa: {
+      text: 'Many nationalities can enter South Korea visa-free for 90 days. South Korea launched a Digital Nomad Visa (F-1-D Workation Visa) in 2024, available to nationals of countries with reciprocal agreements who earn over KRW 85 million (~€58,000) annually. For longer stays, the most common route is an employer-sponsored work visa (E-series) or the Highly Skilled Professional (F-2) visa. The Working Holiday Visa is available for many nationalities under 30. Teaching English (E-2 visa) has been a major immigration pathway for decades.',
+      sources: [
+        { label: 'South Korea visa guide — HiKorea', url: 'https://www.hikorea.go.kr' },
+        { label: 'South Korea Digital Nomad Visa — Ministry of Justice', url: 'https://www.moj.go.kr/moj_eng/index.do' },
+      ],
+    },
+  },
+
+  // ── Laos ───────────────────────────────────────────────────────────────────
+  'LA': {
+    climate: {
+      text: 'Laos has a tropical monsoon climate. Temperatures are hot year-round (25–35°C) with two main seasons: the wet season (May–October) with heavy daily rainfall, and the dry season (November–April) which is also the coolest and most popular time to visit. Vientiane and the Mekong lowlands are hot and humid. The northern highlands (Luang Prabang, Phonsavan) are cooler at altitude. The country receives around 2,500 sun hours per year, concentrated in the dry season. Not suited to those who dislike heat and humidity.',
+      sources: [
+        { label: 'Laos climate — DMH', url: 'http://www.dmhlao.gov.la' },
+        { label: 'Laos weather overview', url: 'https://www.weather-atlas.com/en/laos' },
+      ],
+    },
+    lgbtq_orient: {
+      text: 'Laos does not explicitly criminalise homosexuality, but same-sex relationships have no legal recognition whatsoever. There are no anti-discrimination protections. The government has periodically issued warnings restricting LGBTQ public events and expression. The legal environment is ambiguous and offers no protection. LGBTQ expression, particularly in public, carries unpredictable risk depending on local officials and context.',
+      sources: [
+        { label: 'Laos — Equaldex', url: 'https://www.equaldex.com/region/la' },
+        { label: 'ILGA World — Laos', url: 'https://ilga.org/state-sponsored-homophobia-report/' },
+      ],
+    },
+    lgbtq_gender: {
+      text: 'Laos has no legal framework for gender recognition of trans people. There are no pathways for gender marker change and no official access to gender-affirming healthcare. Trans identity has no legal or social recognition. Medical facilities for any kind of specialist care are very limited nationally.',
+      sources: [
+        { label: 'TGEU — Laos', url: 'https://transrightsmap.tgeu.org/home/' },
+        { label: 'Laos — Equaldex', url: 'https://www.equaldex.com/region/la' },
+      ],
+    },
+    lgbtq_social: {
+      text: 'Laos has a relatively visible expat LGBTQ scene in Vientiane and, to a lesser extent, Vang Vieng and Luang Prabang. The government stance is "don\'t ask, don\'t tell" rather than active persecution — LGBTQ travellers and expats generally report being left alone. However, this tolerance is fragile and geographically and socially limited to expat circles. Among the Lao population, most LGBTQ people are not out to family or community. Public same-sex displays of affection carry risk in most contexts.',
+      sources: [
+        { label: 'Laos — Equaldex social acceptance', url: 'https://www.equaldex.com/region/la' },
+        { label: 'ASEAN SOGIE Caucus', url: 'https://aseansogiecaucus.org' },
+      ],
+    },
+    racial: {
+      text: 'Laos has around 50 recognised ethnic groups and is internally diverse. Foreign visitors — particularly white Westerners — receive warm, hospitable treatment rooted in Buddhist culture. Black and Asian visitors report similarly positive experiences as novelty, curiosity, and politeness rather than hostility. Very few African residents or expats are present, so reactions tend to be driven by genuine curiosity. The expat community is small and tightly knit.',
+      sources: [
+        { label: 'Laos demographics — World Bank', url: 'https://data.worldbank.org/country/LAO' },
+        { label: 'Laos travel guide — Lonely Planet', url: 'https://www.lonelyplanet.com/laos' },
+      ],
+    },
+    safety: {
+      text: 'Laos is generally safe for expats and visitors. Violent crime targeting foreigners is very rare. Traffic accidents are the most significant safety risk — road quality varies and driving standards are inconsistent. The political system is a one-party communist state (LPRP), meaning political expression is restricted and there is no independent press. Drug-related risks exist in some tourist areas (particularly the "Vang Vieng party scene"). UXO (unexploded ordnance from the Vietnam War era) remains a risk in rural areas, particularly in the south and east.',
+      sources: [
+        { label: 'Laos travel advice — UK FCDO', url: 'https://www.gov.uk/foreign-travel-advice/laos' },
+        { label: 'UXO Lao — ordnance safety', url: 'http://www.uxolao.org' },
+      ],
+    },
+    healthcare: {
+      text: 'Healthcare infrastructure in Laos is very limited. Vientiane has the best facilities (Mahosot Hospital, Vientiane International Medical Centre) but care quality is well below Western standards. For serious conditions, medical evacuation to Bangkok (Thailand) is the standard response — this can be arranged in hours from Vientiane. Comprehensive travel insurance with medical evacuation cover is essential. Many medicines are available over-the-counter in pharmacies but authenticity and storage conditions vary.',
+      sources: [
+        { label: 'WHO — Laos health profile', url: 'https://www.who.int/countries/lao/' },
+        { label: 'Laos health overview — Travel Health Pro', url: 'https://travelhealthpro.org.uk/country/119/laos' },
+      ],
+    },
+    cost_value: {
+      text: 'Laos is one of the cheapest countries in Southeast Asia and among the most affordable in the world. Vientiane — while more expensive than Vang Vieng or Luang Prabang — is still very affordable by any standard. A comfortable furnished apartment in central Vientiane costs $300–700/month. Eating out at local restaurants costs $2–5 per meal; imported goods are more expensive. For those earning in strong foreign currencies, a comfortable expat life in Laos is achievable for remarkably little.',
+      sources: [
+        { label: 'Numbeo — cost of living in Laos', url: 'https://www.numbeo.com/cost-of-living/country_result.jsp?country=Laos' },
+        { label: 'Expatistan — Vientiane cost of living', url: 'https://www.expatistan.com/cost-of-living/vientiane' },
+      ],
+    },
+    visa: {
+      text: 'Most nationalities can obtain a visa on arrival or e-visa for 30 days, extendable once for a further 30 days. Laos has no official digital nomad visa. Many long-term expats use "business visas" that allow longer stays and are commonly used for remote work, though this exists in a legal grey area. Some stay on rolling tourist visa runs to neighbouring Thailand or Vietnam. A retirement visa is available for those over 50. Long-term residency options are limited and bureaucratically complex.',
+      sources: [
+        { label: 'Laos e-Visa — laoevisa.gov.la', url: 'https://www.laoevisa.gov.la' },
+        { label: 'Laos visa guide — Expatica', url: 'https://www.expatica.com/laos/moving/laos-visa/' },
+      ],
+    },
+  },
+
+  // ── Lithuania ──────────────────────────────────────────────────────────────
+  'LT': {
+    climate: {
+      text: 'Lithuania has a transitional climate between maritime and continental. Summers are warm (20–26°C in July) and pleasant; winters are cold, grey, and snowy (averaging -4 to -7°C in January). Vilnius receives around 1,850 sun hours per year, most of them concentrated in May–August. The Baltic coast (Klaipėda, Palanga) is cooler and windier but has scenic sand dune beaches. Long winters with limited daylight can be difficult for those sensitive to dark, cold seasons.',
+      sources: [
+        { label: 'Lithuania climate — LHMS', url: 'https://www.meteo.lt/en/' },
+        { label: 'Lithuania weather overview', url: 'https://www.weather-atlas.com/en/lithuania' },
+      ],
+    },
+    lgbtq_orient: {
+      text: 'Lithuania has EU-required anti-discrimination protections in employment but no recognition of same-sex partnerships or marriage. A civil partnership bill has been repeatedly tabled and debated in the Seimas (parliament) since the 2010s without becoming law. Lithuania is among the EU member states with the least legal LGBTQ recognition. The ILGA-Europe Rainbow Map consistently places Lithuania in the lower third of EU countries.',
+      sources: [
+        { label: 'Lithuania — Equaldex', url: 'https://www.equaldex.com/region/lt' },
+        { label: 'ILGA Europe — Lithuania', url: 'https://www.ilga-europe.org/country/lithuania/' },
+      ],
+    },
+    lgbtq_gender: {
+      text: 'Legal gender recognition in Lithuania requires psychiatric diagnosis, medical assessment, and in practice surgery — among the most burdensome processes in the EU. No self-declaration pathway exists. Non-binary identities have no legal recognition. The Catholic Church retains significant cultural influence over these debates.',
+      sources: [
+        { label: 'TGEU Trans Rights Map — Lithuania', url: 'https://transrightsmap.tgeu.org/home/' },
+        { label: 'Lithuania — Equaldex', url: 'https://www.equaldex.com/region/lt' },
+      ],
+    },
+    lgbtq_social: {
+      text: 'The annual Baltic Pride rotates between Vilnius, Riga, and Tallinn and has grown steadily. Vilnius has a small but active LGBTQ community with several dedicated venues. Acceptance is growing among young urban Lithuanians but remains low in rural and religious communities, where the Catholic Church\'s influence is significant. LGBTQ people generally maintain a low profile outside Vilnius. The contrast with Western Europe on social acceptance is significant.',
+      sources: [
+        { label: 'Baltic Pride', url: 'https://www.balticpride.eu' },
+        { label: 'Eurobarometer — LGBTQ acceptance in Lithuania', url: 'https://europa.eu/eurobarometer/' },
+      ],
+    },
+    racial: {
+      text: 'Lithuania is ethnically homogeneous (~83% Lithuanian, with Polish and Russian minorities). There are very few people of African or Asian descent — Black and East Asian visitors are highly visible and may experience staring and occasional comments, though violent incidents are uncommon. Racism is generally non-confrontational but microaggressions are present. The country is becoming more diverse slowly through immigration, partly driven by tech sector growth in Vilnius.',
+      sources: [
+        { label: 'ECRI — Lithuania country report', url: 'https://www.coe.int/en/web/european-commission-against-racism-and-intolerance/lithuania' },
+        { label: 'Lithuania demographics — Statistics Lithuania', url: 'https://www.stat.gov.lt/en' },
+      ],
+    },
+    safety: {
+      text: 'Lithuania is physically safe. Crime rates are low and Vilnius is a safe city to live in day-to-day. As a NATO and EU member sharing borders with Russia\'s Kaliningrad exclave and Belarus, there are geopolitical sensitivities that have intensified since Russia\'s invasion of Ukraine in 2022. Lithuania has significantly increased defence spending and hosts NATO troops. The government assesses the security environment as manageable but monitors it closely.',
+      sources: [
+        { label: 'Global Peace Index — Lithuania', url: 'https://www.visionofhumanity.org/maps/' },
+        { label: 'Lithuania travel advice — UK FCDO', url: 'https://www.gov.uk/foreign-travel-advice/lithuania' },
+      ],
+    },
+    healthcare: {
+      text: 'Lithuania has a public health insurance system (NHIF — National Health Insurance Fund) that covers employed residents and citizens. Quality is reasonable and improving — Vilnius University Hospital and other major facilities are well-equipped. EU health card provides coverage for EU visitors. Private clinics are available and affordable. Some English-speaking services exist in Vilnius but are limited in smaller towns.',
+      sources: [
+        { label: 'NHIF Lithuania', url: 'https://www.vlk.lt/go.php/eng/Home/4' },
+        { label: 'Euro Health Consumer Index', url: 'https://healthpowerhouse.com/publications/' },
+      ],
+    },
+    cost_value: {
+      text: 'Lithuania — and Vilnius in particular — offers very good value by EU standards. A one-bedroom apartment in central Vilnius costs €600–950/month. Eating out is affordable (€8–14 for a main course at a mid-range restaurant). The tech sector has brought economic growth and a modern café culture. Vilnius has repeatedly been cited as one of the best-value startup hubs in Europe, and the city has excellent infrastructure, good public transport, and a growing cosmopolitan food scene.',
+      sources: [
+        { label: 'Numbeo — cost of living in Lithuania', url: 'https://www.numbeo.com/cost-of-living/country_result.jsp?country=Lithuania' },
+        { label: 'Expatistan — Vilnius cost of living', url: 'https://www.expatistan.com/cost-of-living/vilnius' },
+      ],
+    },
+    visa: {
+      text: 'EU/EEA citizens have free movement. Lithuania is part of Schengen. For non-EU nationals, Lithuania is notable for its Startup Visa (valid for 1 year, renewable) for entrepreneurs with an innovative business plan. The EU Blue Card is available for highly skilled workers. No dedicated digital nomad visa as of 2025. Non-EU nationals are otherwise limited to 90 days Schengen stay unless holding a residence permit tied to employment or study.',
+      sources: [
+        { label: 'Lithuania Startup Visa', url: 'https://startupvisas.com/pages/lithuania' },
+        { label: 'Lithuania immigration — DMPRC', url: 'https://www.migracija.lt/en' },
+      ],
+    },
+  },
+
+  // ── Luxembourg ─────────────────────────────────────────────────────────────
+  'LU': {
+    climate: {
+      text: 'Luxembourg has a temperate oceanic climate influenced by its central European position. Summers are warm (20–24°C) and pleasant; winters are cold (0–5°C) with occasional snow, particularly in the Ardennes region in the north. The country averages around 1,650 sun hours per year — moderate by European standards. Rain is distributed throughout the year. Luxembourg is not a destination for sunshine seekers, but the rolling green landscape and river valleys are attractive in summer.',
+      sources: [
+        { label: 'Luxembourg climate — Meteolux', url: 'https://www.meteolux.lu/en/climate/' },
+        { label: 'Luxembourg weather overview', url: 'https://www.weather-atlas.com/en/luxembourg' },
+      ],
+    },
+    lgbtq_orient: {
+      text: 'Luxembourg legalised same-sex marriage in January 2015, with full equality including joint adoption. Anti-discrimination protections are comprehensive. Former Prime Minister Xavier Bettel (2013–2023) was the first openly gay head of government in the EU while in office. Luxembourg is among the most LGBTQ-progressive countries in Europe and in the world.',
+      sources: [
+        { label: 'Luxembourg — Equaldex', url: 'https://www.equaldex.com/region/lu' },
+        { label: 'ILGA Europe — Luxembourg', url: 'https://www.ilga-europe.org/country/luxembourg/' },
+      ],
+    },
+    lgbtq_gender: {
+      text: 'Luxembourg introduced self-declaration of legal gender in 2018, without medical requirements for adults. Minors aged 12 and over can change their legal gender with parental consent. Non-binary recognition is not yet available in official documents. TGEU ranks Luxembourg highly on gender recognition within Europe.',
+      sources: [
+        { label: 'TGEU Trans Rights Map — Luxembourg', url: 'https://transrightsmap.tgeu.org/home/' },
+        { label: 'Luxembourg — Equaldex', url: 'https://www.equaldex.com/region/lu' },
+      ],
+    },
+    lgbtq_social: {
+      text: 'Luxembourg has extremely high LGBTQ acceptance. The country is small (660,000 people), highly international (47% non-citizens), and thoroughly cosmopolitan. The LGBTQ community is well-integrated into mainstream social life. The Luxembourg City Pride and Rainbow Center Luxembourg provide community events and support. The political and social environment is among the most welcoming in Europe.',
+      sources: [
+        { label: 'Rosa Lëtzebuerg — LGBTQ Luxembourg', url: 'https://www.rosa.lu' },
+        { label: 'Eurobarometer — LGBTQ acceptance in Luxembourg', url: 'https://europa.eu/eurobarometer/' },
+      ],
+    },
+    racial: {
+      text: 'Luxembourg is one of the most internationally diverse countries in the world by proportion — nearly half the population are foreign nationals, predominantly from Portugal, Italy, France, Belgium, and Germany. The country is highly cosmopolitan and internationally minded. People of colour are present in the diverse international community and the experience is generally positive. Racism exists but is less visible than in more homogeneous European neighbours.',
+      sources: [
+        { label: 'STATEC — Luxembourg population statistics', url: 'https://statistiques.public.lu/en/index.html' },
+        { label: 'Centre pour l\'égalité de traitement', url: 'https://cet.lu' },
+      ],
+    },
+    safety: {
+      text: 'Luxembourg is one of the safest countries in Europe. Crime rates are very low, political stability is high, and the country is a NATO and EU member. Luxembourg City is a financial centre and European institution hub, with strong institutional security. Natural disaster risk is minimal.',
+      sources: [
+        { label: 'Global Peace Index — Luxembourg', url: 'https://www.visionofhumanity.org/maps/' },
+        { label: 'Luxembourg safety overview', url: 'https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Luxembourg.html' },
+      ],
+    },
+    healthcare: {
+      text: 'Luxembourg has an excellent universal healthcare system managed by the CNS (Caisse Nationale de Santé). All residents — including EU workers and their families — are covered. Quality of care is very high, with modern hospitals and good specialist access. Cross-border healthcare with France, Belgium, and Germany is also common given Luxembourg\'s small size. Healthcare costs are low for residents due to the generous insurance coverage.',
+      sources: [
+        { label: 'CNS — Luxembourg healthcare', url: 'https://cns.public.lu/en.html' },
+        { label: 'Euro Health Consumer Index', url: 'https://healthpowerhouse.com/publications/' },
+      ],
+    },
+    cost_value: {
+      text: 'Luxembourg is extremely expensive. Housing costs have risen dramatically — a one-bedroom apartment in Luxembourg City costs €1,800–2,800/month to rent. Luxembourg consistently ranks as the second most expensive country in the EU for cost of living. However, salaries are the highest in the EU (average gross wage above €70,000), so the purchasing power for those working locally is strong. For those relocating on average foreign incomes, Luxembourg is very challenging financially.',
+      sources: [
+        { label: 'Numbeo — cost of living in Luxembourg', url: 'https://www.numbeo.com/cost-of-living/country_result.jsp?country=Luxembourg' },
+        { label: 'Expatistan — Luxembourg City cost of living', url: 'https://www.expatistan.com/cost-of-living/luxembourg' },
+      ],
+    },
+    visa: {
+      text: 'EU/EEA citizens have full freedom of movement. Luxembourg introduced a Digital Nomad Visa in 2023 for non-EU nationals who work remotely for an employer or clients based outside Luxembourg. Requirements include proof of a remote work contract, minimum monthly income of €3,000–4,000, and private health insurance covering Luxembourg. Residence permits are available through employment for non-EU nationals. Given the proximity to France, Belgium, and Germany, many people live across the borders while working in Luxembourg.',
+      sources: [
+        { label: 'Luxembourg Digital Nomad Visa — MCAS', url: 'https://guichet.public.lu/en/citoyens/immigration/pays-tiers/actif/independent-worker.html' },
+        { label: 'Luxembourg immigration guide', url: 'https://www.expatica.com/lu/moving/visas/luxembourg-visa/' },
+      ],
+    },
+  },
+
+  // ── Latvia ─────────────────────────────────────────────────────────────────
+  'LV': {
+    climate: {
+      text: 'Latvia has a transitional continental-maritime climate. Summers are warm and pleasant (20–25°C in July, up to 30°C during heat waves), with long days — Riga has nearly 18 hours of daylight at midsummer. Winters are cold, dark, and often grey, with temperatures averaging -4 to -7°C in January and frequent snow. Riga receives around 1,800 sun hours per year, concentrated heavily in May–August. The Baltic coast has sandy beaches popular in summer but windy and cold off-season.',
+      sources: [
+        { label: 'Latvia climate — LVGMC', url: 'https://www.meteo.lv/en/' },
+        { label: 'Latvia weather overview', url: 'https://www.weather-atlas.com/en/latvia' },
+      ],
+    },
+    lgbtq_orient: {
+      text: 'Latvia has EU-standard anti-discrimination protections in employment but historically had no recognition of same-sex relationships. A landmark Constitutional Court ruling in November 2023 found that same-sex couples have a constitutional right to legal recognition — the first Baltic court to issue such a ruling. This is expected to result in civil partnership or marriage legislation, marking a significant turning point. Latvia has been one of the more conservative EU states on LGBTQ rights, and the ruling represents a genuine shift.',
+      sources: [
+        { label: 'Latvia — Equaldex', url: 'https://www.equaldex.com/region/lv' },
+        { label: 'ILGA Europe — Latvia', url: 'https://www.ilga-europe.org/country/latvia/' },
+      ],
+    },
+    lgbtq_gender: {
+      text: 'Legal gender recognition in Latvia requires psychiatric diagnosis and medical procedures — there is no self-declaration pathway. Non-binary identities have no legal recognition. Latvia is ranked among the more restrictive EU countries on trans rights by TGEU, though the Constitutional Court ruling on same-sex recognition may open broader discussions.',
+      sources: [
+        { label: 'TGEU Trans Rights Map — Latvia', url: 'https://transrightsmap.tgeu.org/home/' },
+        { label: 'Latvia — Equaldex', url: 'https://www.equaldex.com/region/lv' },
+      ],
+    },
+    lgbtq_social: {
+      text: 'Riga Pride has been held annually since 2005 — the first Baltic Pride — and has grown from a contested event with violent counter-protesters to a more accepted annual tradition. Riga has a small but established LGBTQ venue scene. Social acceptance remains significantly lower than in Western Europe — Latvia consistently scores among the lower EU countries in Eurobarometer LGBTQ acceptance surveys. Outside Riga, conservative rural attitudes and Russian Orthodox and Lutheran church influence are dominant.',
+      sources: [
+        { label: 'Riga Pride — rigapride.lv', url: 'https://rigapride.lv' },
+        { label: 'Eurobarometer — LGBTQ acceptance in Latvia', url: 'https://europa.eu/eurobarometer/' },
+      ],
+    },
+    racial: {
+      text: 'Latvia is internally diverse between its Latvian (~62%) and Russian-speaking (~25%) communities, with significant tensions since Russia\'s invasion of Ukraine in 2022. Black and East Asian visitors or residents are very rare and may experience prolonged staring and limited familiarity. Violent racist incidents are uncommon but the social climate is less multicultural than Western Europe. The growing tech sector in Riga has brought some international diversity.',
+      sources: [
+        { label: 'ECRI — Latvia country report', url: 'https://www.coe.int/en/web/european-commission-against-racism-and-intolerance/latvia' },
+        { label: 'Latvia demographics — CSB', url: 'https://stat.gov.lv/en' },
+      ],
+    },
+    safety: {
+      text: 'Latvia is generally safe in terms of street crime. Violent crime is low and Riga is a safe city to navigate. As a NATO and EU member sharing a long border with Russia, the geopolitical environment has been heightened since February 2022 — Latvia hosts a NATO Enhanced Forward Presence battlegroup and has significantly increased defence spending. The risk to daily civilian life remains low but the context is important for long-term planning.',
+      sources: [
+        { label: 'Global Peace Index — Latvia', url: 'https://www.visionofhumanity.org/maps/' },
+        { label: 'Latvia travel advice — UK FCDO', url: 'https://www.gov.uk/foreign-travel-advice/latvia' },
+      ],
+    },
+    healthcare: {
+      text: 'Latvia has a compulsory public health insurance system for employed residents. Quality of public healthcare is reasonable but lower than Western EU standards — facilities are better in Riga, limited in rural areas. There have been ongoing challenges with healthcare worker emigration. Private clinics in Riga offer good quality care at affordable prices. EU health card provides basic coverage for EU visitors.',
+      sources: [
+        { label: 'NHS Latvia — veselibas-centrs.lv', url: 'https://www.vmnvd.gov.lv/en' },
+        { label: 'Euro Health Consumer Index', url: 'https://healthpowerhouse.com/publications/' },
+      ],
+    },
+    cost_value: {
+      text: 'Latvia offers good value by EU standards, particularly relative to its quality of infrastructure and urban culture. Riga is one of the more affordable EU capitals — a one-bedroom apartment in central Riga costs €600–900/month. Eating out is affordable (€10–15 for a good main course at a mid-range restaurant). Latvia has developed an active tech and startup ecosystem that has attracted remote workers. The Baltic states collectively offer reasonable value for EU-standard amenities.',
+      sources: [
+        { label: 'Numbeo — cost of living in Latvia', url: 'https://www.numbeo.com/cost-of-living/country_result.jsp?country=Latvia' },
+        { label: 'Expatistan — Riga cost of living', url: 'https://www.expatistan.com/cost-of-living/riga' },
+      ],
+    },
+    visa: {
+      text: 'EU/EEA citizens have full freedom of movement. Latvia is part of Schengen. For non-EU nationals, Latvia does not have a dedicated digital nomad visa as of 2025. The EU Blue Card is available for highly skilled professionals. The Startup Visa is available for entrepreneurs. Non-EU nationals are otherwise limited to the 90-day Schengen stay unless holding a work or study residence permit.',
+      sources: [
+        { label: 'Latvia immigration — PMLP', url: 'https://www.pmlp.gov.lv/en/' },
+        { label: 'Expatica — Latvia visa guide', url: 'https://www.expatica.com/lv/moving/visas/' },
+      ],
+    },
+  },
+
+  // ── Montenegro ─────────────────────────────────────────────────────────────
+  'ME': {
+    climate: {
+      text: 'Montenegro has two distinct climate zones. The Adriatic coast (Kotor, Budva, Herceg Novi, Bar) has one of the sunniest Mediterranean climates in Europe — hot dry summers (28–35°C) and mild wet winters, with up to 2,700 sun hours per year in the Bay of Kotor. The inland capital Podgorica is hot and dry, sometimes reaching 40°C in summer. The mountainous north (Durmitor, Kolašin) is alpine — cold and snowy in winter, cool in summer, and spectacular. Montenegro offers an outstanding climate for those who seek Mediterranean sun without the high costs of Italy or Greece.',
+      sources: [
+        { label: 'Montenegro climate — ZHMS', url: 'http://www.meteo.co.me/index.php/en/' },
+        { label: 'Montenegro weather overview', url: 'https://www.weather-atlas.com/en/montenegro' },
+      ],
+    },
+    lgbtq_orient: {
+      text: 'Montenegro became the first country in the Western Balkans to legally recognise same-sex civil unions in July 2020, through the Law on Life Partnerships. The law provides registered partners with inheritance, hospital visitation, and some other rights, though it falls short of full marriage equality. Anti-discrimination protections exist in law. Montenegro\'s EU candidacy process (ongoing since 2012) continues to drive gradual LGBTQ legal progress, though implementation has been slow.',
+      sources: [
+        { label: 'Montenegro — Equaldex', url: 'https://www.equaldex.com/region/me' },
+        { label: 'ILGA Europe — Montenegro', url: 'https://www.ilga-europe.org/country/montenegro/' },
+      ],
+    },
+    lgbtq_gender: {
+      text: 'Legal gender recognition in Montenegro exists but requires medical procedures including surgery — no self-declaration pathway is available. Non-binary identities are not legally recognised. Access to gender-affirming healthcare is very limited. The TGEU Trans Rights Map rates Montenegro poorly, though the country\'s civil union recognition represents modest progress by Balkan regional standards.',
+      sources: [
+        { label: 'TGEU Trans Rights Map — Montenegro', url: 'https://transrightsmap.tgeu.org/home/' },
+        { label: 'Montenegro — Equaldex', url: 'https://www.equaldex.com/region/me' },
+      ],
+    },
+    lgbtq_social: {
+      text: 'Montenegro Pride has been held in Podgorica since 2013 and has become more established over time, though it routinely faces significant opposition from religious and nationalist counter-protesters. The coastal tourist towns (Budva, Kotor) have some LGBTQ-friendly venues and a more relaxed atmosphere in summer, driven partly by international tourism. The dominant social climate remains conservative, with the Serbian Orthodox Church having significant cultural influence. LGBTQ people generally maintain a low profile in most social contexts outside specific spaces.',
+      sources: [
+        { label: 'Montenegro — Equaldex social acceptance', url: 'https://www.equaldex.com/region/me' },
+        { label: 'ILGA Europe — Montenegro rainbow score', url: 'https://www.ilga-europe.org/country/montenegro/' },
+      ],
+    },
+    racial: {
+      text: 'Montenegro is a small country (650,000 people) with significant internal ethnic diversity — Montenegrin, Serbian, Bosniak, Albanian, and Roma communities coexist, with varying levels of inter-ethnic tension. Foreign visitors of all backgrounds are generally welcomed in the tourist-oriented coastal economy. Black and Asian visitors are rare and may attract curious stares in rural areas, but violent incidents are uncommon. The coastal tourist industry creates a fairly open and tolerant atmosphere during the summer season.',
+      sources: [
+        { label: 'Montenegro demographics — MONSTAT', url: 'https://www.monstat.org/eng/' },
+        { label: 'ECRI — Montenegro report', url: 'https://www.coe.int/en/web/european-commission-against-racism-and-intolerance/montenegro' },
+      ],
+    },
+    safety: {
+      text: 'Montenegro is generally safe for residents and visitors. Street crime is low. Organised crime has historically been present (connections to regional drug trafficking networks), but this rarely affects ordinary life or expats. Political instability has been a feature in recent years — frequent changes of government, contested elections, and political protests. Podgorica and the coast are safe for daily life. Traffic driving standards are lower than Western European norms.',
+      sources: [
+        { label: 'Global Peace Index — Montenegro', url: 'https://www.visionofhumanity.org/maps/' },
+        { label: 'Montenegro travel advice — UK FCDO', url: 'https://www.gov.uk/foreign-travel-advice/montenegro' },
+      ],
+    },
+    healthcare: {
+      text: 'Montenegro has a public health insurance system that covers citizens and registered residents. Quality is basic — Podgorica\'s Clinical Centre of Montenegro is the main referral hospital, with limited specialist capacity. For anything beyond routine care, treatment in Serbia (Belgrade) or abroad is common. Private clinics in Podgorica and the coastal towns offer better service. Comprehensive travel or expat health insurance is strongly recommended.',
+      sources: [
+        { label: 'WHO — Montenegro health profile', url: 'https://www.who.int/countries/mne/' },
+        { label: 'Montenegro healthcare overview', url: 'https://www.hzzo.me/en/' },
+      ],
+    },
+    cost_value: {
+      text: 'Montenegro offers outstanding value, particularly on the Adriatic coast. Kotor Bay — one of the most beautiful natural harbours in Europe — is a fraction of the cost of comparable Italian or Croatian coastline. Podgorica is very affordable for daily living. A one-bedroom apartment in Budva or Kotor costs €400–800/month; in Podgorica €350–600. Eating out at local restaurants is cheap. The combination of Mediterranean beauty, low costs, and improving infrastructure makes Montenegro one of the best-value relocation choices in Europe.',
+      sources: [
+        { label: 'Numbeo — cost of living in Montenegro', url: 'https://www.numbeo.com/cost-of-living/country_result.jsp?country=Montenegro' },
+        { label: 'Expatistan — Podgorica cost of living', url: 'https://www.expatistan.com/cost-of-living/podgorica' },
+      ],
+    },
+    visa: {
+      text: 'Montenegro is not yet in the EU or Schengen, which gives it more flexibility on visa policy. Many nationalities (including EU, US, UK, Australia) can enter visa-free for 90 days. Montenegro introduced a Digital Nomad Residence Permit in 2021, available for non-EU remote workers — one of the first in the Balkans. The permit requires proof of remote work and is valid for up to 1 year, renewable. The process is relatively simple and the cost of living makes it an attractive base. EU accession negotiations are ongoing.',
+      sources: [
+        { label: 'Montenegro Digital Nomad visa — gov.me', url: 'https://www.gov.me/en/ministry/interior' },
+        { label: 'Montenegro visa guide — Expatica', url: 'https://www.expatica.com/me/moving/visas/' },
+      ],
+    },
+  },
+
 };
 
 // ── Helper: get detail text for a country / dimension ──────────────────────
