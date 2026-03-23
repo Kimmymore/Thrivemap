@@ -6,8 +6,6 @@ import { COUNTRIES } from './data/countries';
 import {
   fetchEqualdexData,
   mergeEqualdexData,
-  fetchWHOHealthcare,
-  mergeHealthcareData,
   fetchWorldBankSafety,
   mergeSafetyData,
   mergeExternalScores,
@@ -32,20 +30,17 @@ export default function App() {
 
   const [countries, setCountries] = useState(COUNTRIES);
   const [equaldexStatus, setEqualdexStatus] = useState('idle');
-  const [healthcareStatus, setHealthcareStatus] = useState('idle');
   const [safetyStatus, setSafetyStatus] = useState('idle');
   const [scored, setScored] = useState([]);
 
   useEffect(() => {
     setEqualdexStatus('loading');
-    setHealthcareStatus('loading');
     setSafetyStatus('loading');
 
     Promise.all([
       fetchEqualdexData(),
-      fetchWHOHealthcare(),
       fetchWorldBankSafety(),
-    ]).then(([liveEqualdex, liveHealth, liveSafety]) => {
+    ]).then(([liveEqualdex, liveSafety]) => {
       // Start from the original static data and layer each source on top
       let updated = COUNTRIES;
 
@@ -56,13 +51,6 @@ export default function App() {
         setEqualdexStatus('error');
       }
 
-      if (liveHealth) {
-        updated = mergeHealthcareData(updated, liveHealth);
-        setHealthcareStatus('ok');
-      } else {
-        setHealthcareStatus('error');
-      }
-
       if (liveSafety) {
         updated = mergeSafetyData(updated, liveSafety);
         setSafetyStatus('ok');
@@ -70,8 +58,10 @@ export default function App() {
         setSafetyStatus('error');
       }
 
-      // Apply bundled annual data (GPI + Rainbow Map) last —
-      // these are baked into the build each July and refine safety + LGBTQ scores.
+      // Apply bundled annual data (GPI + Rainbow Map + WHO healthcare) last —
+      // these are fetched each July by the GitHub Actions workflow and baked into
+      // the build. WHO GHO is included here because its API has no CORS headers
+      // and cannot be called directly from a browser.
       updated = mergeExternalScores(updated);
 
       setCountries(updated);
@@ -151,7 +141,6 @@ export default function App() {
             persons={persons}
             weights={weights}
             equaldexStatus={equaldexStatus}
-            healthcareStatus={healthcareStatus}
             safetyStatus={safetyStatus}
             onBack={() => setStep('preferences')}
             onReset={() => {
@@ -172,9 +161,7 @@ export default function App() {
           {equaldexStatus === 'error' && <span className="badge cached">● built-in</span>}
           {equaldexStatus === 'loading' && <span className="badge loading-ind">● updating…</span>}
           {' · '}Healthcare: <a href="https://www.who.int/data/gho" target="_blank" rel="noreferrer">WHO GHO</a>
-          {healthcareStatus === 'ok' && <span className="badge live">● live</span>}
-          {healthcareStatus === 'error' && <span className="badge cached">● built-in</span>}
-          {healthcareStatus === 'loading' && <span className="badge loading-ind">● updating…</span>}
+          <span className="badge cached">● annual</span>
           {' · '}Safety: <a href="https://data.worldbank.org/indicator/PV.EST" target="_blank" rel="noreferrer">World Bank</a>
           {safetyStatus === 'ok' && <span className="badge live">● live</span>}
           {safetyStatus === 'error' && <span className="badge cached">● built-in</span>}

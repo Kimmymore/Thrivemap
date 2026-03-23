@@ -328,7 +328,50 @@ def _rainbow_from_country_csvs() -> dict[str, int]:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 3. Write output
+# 3. WHO GHO — UHC Service Coverage Index
+# ─────────────────────────────────────────────────────────────────────────────
+
+def fetch_who_healthcare() -> dict[str, int] | None:
+    """
+    Fetch the UHC Service Coverage Index from the WHO Global Health Observatory.
+
+    Endpoint: https://ghoapi.azureedge.net/api/UHC_INDEX_REPORTED_WHO
+    The index is already on a 0–100 scale (100 = full coverage).
+    Records are ordered newest first; we keep the most recent value per country.
+
+    Returns { iso2: healthcare_score (0-100) } or None on failure.
+    Source: https://www.who.int/data/gho/indicator-metadata-registry/imr-details/4834
+    """
+    url = (
+        "https://ghoapi.azureedge.net/api/UHC_INDEX_REPORTED_WHO"
+        "?$orderby=TimeDim%20desc"
+    )
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=30)
+        if not resp.ok:
+            log.warning("WHO GHO: HTTP %d", resp.status_code)
+            return None
+    except requests.RequestException as e:
+        log.warning("WHO GHO: request failed: %s", e)
+        return None
+
+    records = resp.json().get("value", [])
+    result = {}
+    for rec in records:
+        iso3 = rec.get("SpatialDim", "")
+        iso2 = ISO3_TO_ISO2.get(iso3)
+        if not iso2 or iso2 in result:
+            continue
+        val = rec.get("NumericValue")
+        if val is not None:
+            result[iso2] = round(float(val))
+
+    log.info("WHO GHO: parsed %d countries", len(result))
+    return result if result else None
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 4. Write output
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main():
@@ -339,28 +382,37 @@ def main():
     log.info("Fetching ILGA-Europe Rainbow Map...")
     rainbow = fetch_rainbow_map() or {}
 
+    log.info("Fetching WHO GHO UHC Service Coverage Index...")
+    healthcare = fetch_who_healthcare() or {}
+
     output = {
         "_meta": {
-            "generated":   datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "gpi_count":   len(gpi),
-            "rainbow_count": len(rainbow),
+            "generated":        datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "gpi_count":        len(gpi),
+            "rainbow_count":    len(rainbow),
+            "healthcare_count": len(healthcare),
             "note": (
                 "gpi scores are 0–100 (100 = most peaceful), "
                 "normalised from raw GPI (1.0–3.5 scale, lower = more peaceful). "
-                "rainbow scores are 0–100 Rainbow Index percentage from ILGA-Europe."
+                "rainbow scores are 0–100 Rainbow Index percentage from ILGA-Europe. "
+                "healthcare scores are the WHO UHC Service Coverage Index (0–100)."
             ),
         },
-        "gpi":     gpi,
-        "rainbow": rainbow,
+        "gpi":        gpi,
+        "rainbow":    rainbow,
+        "healthcare": healthcare,
     }
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps(output, indent=2, ensure_ascii=False) + "\n")
     log.info("Written to %s", OUT_PATH)
-    log.info("GPI: %d countries, Rainbow: %d countries", len(gpi), len(rainbow))
+    log.info(
+        "GPI: %d countries, Rainbow: %d countries, Healthcare: %d countries",
+        len(gpi), len(rainbow), len(healthcare),
+    )
 
-    if not gpi and not rainbow:
-        log.error("Both sources returned no data — exiting with error")
+    if not gpi and not rainbow and not healthcare:
+        log.error("All sources returned no data — exiting with error")
         sys.exit(1)
 
 

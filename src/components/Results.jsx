@@ -160,7 +160,7 @@ function personSummary(person) {
   return `${gender} · ${orient} · ${race}`;
 }
 
-export default function Results({ scored, persons, weights, equaldexStatus, healthcareStatus, safetyStatus, onBack, onReset }) {
+export default function Results({ scored, persons, weights, equaldexStatus, safetyStatus, onBack, onReset }) {
   const [expanded, setExpanded] = useState(null);
   const [filter, setFilter] = useState('');
   const [showLegend, setShowLegend] = useState(false);
@@ -239,7 +239,7 @@ export default function Results({ scored, persons, weights, equaldexStatus, heal
             {' '}LGBTQ+ from <a href="https://equaldex.com" target="_blank" rel="noreferrer">Equaldex</a>
             {equaldexStatus === 'ok' ? ' (live)' : ' (built-in)'}.
             {' '}Healthcare from <a href="https://www.who.int/data/gho" target="_blank" rel="noreferrer">WHO GHO</a>
-            {healthcareStatus === 'ok' ? ' (live)' : ' (built-in)'}.
+            {' (annual)'}.
             {' '}Safety from <a href="https://data.worldbank.org/indicator/PV.EST" target="_blank" rel="noreferrer">World Bank</a>
             {safetyStatus === 'ok' ? ' (live)' : ' (built-in)'}.
           </p>
