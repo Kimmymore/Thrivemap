@@ -7,7 +7,7 @@
 
 import externalScores from './external-scores.json';
 
-const EQUALDEX_API = 'https://www.equaldex.com/api/regions';
+const EQUALDEX_API_REGION = 'https://www.equaldex.com/api/region';
 const EQUALDEX_API_KEY = import.meta.env.VITE_EQUALDEX_API_KEY;
 
 const WB_API_BASE = 'https://api.worldbank.org/v2/country/all/indicator';
@@ -50,25 +50,39 @@ const ISO3_TO_ISO2 = Object.fromEntries(
  * or null on failure.
  */
 export async function fetchEqualdexData() {
-  try {
-    const url = `${EQUALDEX_API}?apiKey=${EQUALDEX_API_KEY}`;
-    const res = await fetch(url);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const json = await res.json();
+  if (!EQUALDEX_API_KEY) {
+    console.warn('Equaldex API key not configured.');
+    return null;
+  }
 
-    // The API may return { regions: [...] } or an array directly
-    const list = Array.isArray(json) ? json : (json.regions || json.data || []);
+  const codes = Object.keys(ISO2_TO_ISO3);
+
+  try {
+    const results = await Promise.allSettled(
+      codes.map(async (code) => {
+        const url = `${EQUALDEX_API_REGION}/${code.toLowerCase()}?apiKey=${EQUALDEX_API_KEY}`;
+        const res = await fetch(url);
+        if (!res.ok) throw new Error(`HTTP ${res.status} for ${code}`);
+        const json = await res.json();
+        return { code, json };
+      })
+    );
+
     const map = {};
-    for (const item of list) {
-      if (item.region_id) {
-        map[item.region_id] = {
-          ei:           item.ei ?? null,
-          lgbtq_orient: item.ei_legal ?? null,
-          lgbtq_social: item.ei_po ?? null,
-        };
-      }
+    for (const result of results) {
+      if (result.status === 'rejected') continue;
+      const { code, json } = result.value;
+      // Equaldex single-region response: { region: { ei, ei_legal, ei_po, ... } }
+      const region = json.region ?? json;
+      if (!region) continue;
+      map[code] = {
+        ei:           region.ei       ?? null,
+        lgbtq_orient: region.ei_legal ?? null,
+        lgbtq_social: region.ei_po    ?? null,
+      };
     }
-    return map;
+
+    return Object.keys(map).length > 0 ? map : null;
   } catch (e) {
     console.warn('Equaldex API unavailable, using built-in data.', e.message);
     return null;
