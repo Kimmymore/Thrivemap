@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { DIMENSIONS } from '../data/scoring';
 
 const TEMP_LABELS = ['❄️ Very cold', 'Cold', 'Mild / temperate', 'Warm', '☀️ Tropical hot'];
@@ -34,16 +33,7 @@ function WeightSlider({ dim, value, onChange }) {
   );
 }
 
-export default function Preferences({ persons, weights, tempPref, minSun, onNext, onBack }) {
-  const [localWeights, setLocalWeights] = useState(weights);
-  const [localTemp, setLocalTemp] = useState(tempPref);
-  const [localSun, setLocalSun] = useState(minSun);
-
-  const updateWeight = (key, val) => {
-    setLocalWeights(prev => ({ ...prev, [key]: val }));
-  };
-
-  // Non-climate dimensions
+export default function Preferences({ weights, tempPref, onWeightChange, onTempChange, onNext, onBack }) {
   const otherDimensions = DIMENSIONS.filter(d => d.key !== 'climate');
 
   return (
@@ -56,25 +46,24 @@ export default function Preferences({ persons, weights, tempPref, minSun, onNext
         </p>
       </div>
 
-      {/* Climate section */}
       <div className="pref-section">
         <h3 className="pref-section-title">🌡️ Climate preferences</h3>
 
         <div className="pref-row">
           <div className="pref-row-header">
             <span className="pref-label">Temperature preference</span>
-            <span className="pref-value">{tempLabel(localTemp)}</span>
+            <span className="pref-value">{tempLabel(tempPref)}</span>
           </div>
           <input
             type="range"
             min={0}
             max={100}
             step={5}
-            value={localTemp}
-            onChange={e => setLocalTemp(Number(e.target.value))}
+            value={tempPref}
+            onChange={e => onTempChange(Number(e.target.value))}
             aria-label="Temperature preference"
             className="pref-slider temp-slider"
-            style={{ '--pct': `${localTemp}%` }}
+            style={{ '--pct': `${tempPref}%` }}
           />
           <div className="temp-scale-labels">
             <span>❄️ Arctic cold</span>
@@ -87,34 +76,9 @@ export default function Preferences({ persons, weights, tempPref, minSun, onNext
 
         <div className="pref-row">
           <div className="pref-row-header">
-            <span className="pref-label">Minimum sunshine hours / day</span>
-            <span className="pref-value">{localSun.toFixed(1)}h</span>
-          </div>
-          <input
-            type="range"
-            min={3}
-            max={10}
-            step={0.5}
-            value={localSun}
-            onChange={e => setLocalSun(Number(e.target.value))}
-            aria-label="Minimum daily sunshine hours"
-            className="pref-slider"
-            style={{ '--pct': `${((localSun - 3) / 7) * 100}%` }}
-          />
-          <div className="temp-scale-labels">
-            <span>3h (northern winter)</span>
-            <span>10h (tropical)</span>
-          </div>
-          <p className="pref-desc">
-            Countries with less sunshine than this minimum will score lower on climate.
-          </p>
-        </div>
-
-        <div className="pref-row">
-          <div className="pref-row-header">
             <span className="pref-label">Climate — importance</span>
-            <span className={`pref-value ${localWeights.climate < 20 ? 'low' : localWeights.climate >= 70 ? 'high' : ''}`}>
-              {localWeights.climate < 20 ? 'Off' : localWeights.climate < 40 ? 'Low' : localWeights.climate < 65 ? 'Medium' : 'High'}
+            <span className={`pref-value ${weights.climate < 20 ? 'low' : weights.climate >= 70 ? 'high' : ''}`}>
+              {weights.climate < 20 ? 'Off' : weights.climate < 40 ? 'Low' : weights.climate < 65 ? 'Medium' : 'High'}
             </span>
           </div>
           <input
@@ -122,11 +86,11 @@ export default function Preferences({ persons, weights, tempPref, minSun, onNext
             min={0}
             max={100}
             step={5}
-            value={localWeights.climate}
-            onChange={e => updateWeight('climate', Number(e.target.value))}
+            value={weights.climate}
+            onChange={e => onWeightChange('climate', Number(e.target.value))}
             aria-label="Climate importance"
             className="pref-slider"
-            style={{ '--pct': `${localWeights.climate}%` }}
+            style={{ '--pct': `${weights.climate}%` }}
           />
           <p className="pref-desc">
             How much should climate match affect a country's overall score?
@@ -134,7 +98,6 @@ export default function Preferences({ persons, weights, tempPref, minSun, onNext
         </div>
       </div>
 
-      {/* All other dimensions */}
       <div className="pref-section">
         <h3 className="pref-section-title">⚖️ What matters to your happiness?</h3>
         <p className="pref-section-note">
@@ -147,15 +110,15 @@ export default function Preferences({ persons, weights, tempPref, minSun, onNext
           <WeightSlider
             key={dim.key}
             dim={dim}
-            value={localWeights[dim.key] ?? 50}
-            onChange={val => updateWeight(dim.key, val)}
+            value={weights[dim.key] ?? 50}
+            onChange={val => onWeightChange(dim.key, val)}
           />
         ))}
       </div>
 
       <div className="step-actions">
         <button className="btn-secondary" onClick={onBack}>← Back</button>
-        <button className="btn-primary" onClick={() => onNext(localWeights, localTemp, localSun)}>
+        <button className="btn-primary" onClick={onNext}>
           Show my results →
         </button>
       </div>

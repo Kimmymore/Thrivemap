@@ -24,9 +24,10 @@ export default function App() {
     { gender: '', orientation: '', race: '' },
   ]);
 
+  const [maxStep, setMaxStep] = useState(0);
+
   const [weights, setWeights] = useState(DEFAULT_WEIGHTS);
   const [tempPref, setTempPref] = useState(50);
-  const [minSun, setMinSun] = useState(5);
 
   const [countries, setCountries] = useState(COUNTRIES);
   const [equaldexStatus, setEqualdexStatus] = useState('idle');
@@ -71,24 +72,27 @@ export default function App() {
   const computeScores = useCallback(() => {
     const results = countries.map(c => ({
       ...c,
-      ...scoreCountry(c, persons, weights, tempPref, minSun),
+      ...scoreCountry(c, persons, weights, tempPref),
     }));
     results.sort((a, b) => b.total - a.total);
     setScored(results);
-  }, [countries, persons, weights, tempPref, minSun]);
+  }, [countries, persons, weights, tempPref]);
 
   const handleProfileNext = (updatedPersons) => {
     setPersons(updatedPersons);
     setWeights(suggestWeights(updatedPersons));
+    setMaxStep(prev => Math.max(prev, 1));
     setStep('preferences');
   };
 
-  const handlePreferencesNext = (updatedWeights, updatedTempPref, updatedMinSun) => {
-    setWeights(updatedWeights);
-    setTempPref(updatedTempPref);
-    setMinSun(updatedMinSun);
+  const handlePreferencesNext = () => {
+    setMaxStep(prev => Math.max(prev, 2));
     setStep('results');
   };
+
+  const handleWeightChange = (key, val) =>
+    setWeights(prev => ({ ...prev, [key]: val }));
+  const handleTempChange = (val) => setTempPref(val);
 
   useEffect(() => {
     if (step === 'results') computeScores();
@@ -109,8 +113,8 @@ export default function App() {
               <button
                 key={label}
                 className={`step-btn ${i === stepIndex ? 'active' : ''} ${i < stepIndex ? 'done' : ''}`}
-                onClick={() => i < stepIndex && setStep(STEPS[i])}
-                disabled={i > stepIndex}
+                onClick={() => i !== stepIndex && i <= maxStep && setStep(STEPS[i])}
+                disabled={i > maxStep}
                 aria-current={i === stepIndex ? 'step' : undefined}
               >
                 <span className="step-num">{i < stepIndex ? '✓' : i + 1}</span>
@@ -127,10 +131,10 @@ export default function App() {
         )}
         {step === 'preferences' && (
           <Preferences
-            persons={persons}
             weights={weights}
             tempPref={tempPref}
-            minSun={minSun}
+            onWeightChange={handleWeightChange}
+            onTempChange={handleTempChange}
             onNext={handlePreferencesNext}
             onBack={() => setStep('profile')}
           />
@@ -145,10 +149,10 @@ export default function App() {
             onBack={() => setStep('preferences')}
             onReset={() => {
               setStep('profile');
+              setMaxStep(0);
               setPersons([{ gender: '', orientation: '', race: '' }]);
               setWeights(DEFAULT_WEIGHTS);
               setTempPref(50);
-              setMinSun(5);
             }}
           />
         )}

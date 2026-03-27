@@ -132,14 +132,10 @@ export function isGenderDiverse(gender) {
 /**
  * Calculate the climate match score (0–100).
  */
-export function climateScore(country, tempPref, minSunHours) {
+export function climateScore(country, tempPref) {
   const countryTempScore = Math.max(0, Math.min(100, ((country.avg_temp_c + 10) / 45) * 100));
   const dist = Math.abs(countryTempScore - tempPref);
-  const tempMatch = Math.max(0, 100 - dist * 1.2);
-  const sunPenalty = country.sun_hours < minSunHours
-    ? ((minSunHours - country.sun_hours) / minSunHours) * 60
-    : 0;
-  return Math.max(0, tempMatch - sunPenalty);
+  return Math.max(0, 100 - dist * 1.2);
 }
 
 /**
@@ -167,9 +163,9 @@ export function lgbtqGenderScore(country) {
 /**
  * Compute the overall score for a country.
  */
-export function scoreCountry(country, persons, weights, tempPref, minSun) {
+export function scoreCountry(country, persons, weights, tempPref) {
   const breakdown = {
-    climate:        climateScore(country, tempPref, minSun),
+    climate:        climateScore(country, tempPref),
     lgbtq_orient:   country.lgbtq_orient ?? 50,
     lgbtq_gender:   country.lgbtq_gender ?? 50,
     lgbtq_social:   country.lgbtq_social ?? 50,
