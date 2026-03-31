@@ -7,14 +7,16 @@ import {
   fetchWorldBankSafety,
   mergeSafetyData,
   mergeExternalScores,
-  equaldexAnnualAvailable,
+  equaldexLastUpdated,
   scoreCountry,
   suggestWeights,
   DEFAULT_WEIGHTS,
 } from './data/scoring';
 
-// Derived synchronously from the bundled JSON — no browser-side API call needed.
-const equaldexStatus = equaldexAnnualAvailable ? 'ok' : 'error';
+// Format as "Jan 2025", or null when Equaldex data has never been fetched.
+const equaldexDateLabel = equaldexLastUpdated
+  ? new Date(equaldexLastUpdated).toLocaleDateString('en-GB', { month: 'short', year: 'numeric' })
+  : null;
 import './App.css';
 
 const STEPS = ['profile', 'preferences', 'results'];
@@ -129,7 +131,7 @@ export default function App() {
             scored={scored}
             persons={persons}
             weights={weights}
-            equaldexStatus={equaldexStatus}
+            equaldexDateLabel={equaldexDateLabel}
             safetyStatus={safetyStatus}
             onBack={() => setStep('preferences')}
             onReset={() => {
@@ -146,8 +148,7 @@ export default function App() {
       <footer className="app-footer">
         <p>
           LGBTQ+: <a href="https://equaldex.com" target="_blank" rel="noreferrer">Equaldex</a>
-          {equaldexStatus === 'ok' && <span className="badge live">● live</span>}
-          {equaldexStatus === 'error' && <span className="badge cached">● built-in</span>}
+          {equaldexDateLabel && <span className="badge live">● {equaldexDateLabel}</span>}
           {' · '}Healthcare: <a href="https://www.who.int/data/gho" target="_blank" rel="noreferrer">WHO GHO</a>
           <span className="badge cached">● annual</span>
           {' · '}Safety: <a href="https://data.worldbank.org/indicator/PV.EST" target="_blank" rel="noreferrer">World Bank</a>

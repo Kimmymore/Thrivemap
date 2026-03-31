@@ -160,7 +160,7 @@ function personSummary(person) {
   return `${gender} · ${orient} · ${race}`;
 }
 
-export default function Results({ scored, persons, weights, equaldexStatus, safetyStatus, onBack, onReset }) {
+export default function Results({ scored, persons, weights, equaldexDateLabel, safetyStatus, onBack, onReset }) {
   const [expanded, setExpanded] = useState(null);
   const [filter, setFilter] = useState('');
   const [showLegend, setShowLegend] = useState(false);
@@ -237,7 +237,7 @@ export default function Results({ scored, persons, weights, equaldexStatus, safe
           <p className="legend-note">
             Scores reflect averages and published indices. Individual experiences vary.
             {' '}LGBTQ+ from <a href="https://equaldex.com" target="_blank" rel="noreferrer">Equaldex</a>
-            {equaldexStatus === 'ok' ? ' (live)' : ' (built-in)'}.
+            {equaldexDateLabel ? ` (updated ${equaldexDateLabel})` : ''}.
             {' '}Healthcare from <a href="https://www.who.int/data/gho" target="_blank" rel="noreferrer">WHO GHO</a>
             {' (annual)'}.
             {' '}Safety from <a href="https://data.worldbank.org/indicator/PV.EST" target="_blank" rel="noreferrer">World Bank</a>

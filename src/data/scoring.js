@@ -190,9 +190,12 @@ export function mergeSafetyData(countries, safetyMap) {
  * Includes WHO GHO healthcare, GPI safety blend, and Rainbow Map LGBTQ index.
  * Call before mergeSafetyData (World Bank live data applied last).
  */
-/** True when the annual GitHub Actions job has populated Equaldex data. */
-export const equaldexAnnualAvailable =
-  Object.keys(externalScores?.equaldex || {}).length > 0;
+/**
+ * ISO timestamp of the last successful Equaldex data fetch, or null if it
+ * has never run. Set by scripts/update_equaldex.py via _meta.equaldex_updated.
+ */
+export const equaldexLastUpdated =
+  externalScores?._meta?.equaldex_updated ?? null;
 
 export function mergeExternalScores(countries) {
   const gpi        = externalScores?.gpi        || {};
