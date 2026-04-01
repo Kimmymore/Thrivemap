@@ -11,6 +11,12 @@ updates:
     open-pull-requests-limit: 5
     labels:
       - dependencies
+    # Block eslint major bumps until eslint-plugin-react-hooks supports the new major
+    ignore:
+      - dependency-name: "eslint"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@eslint/js"
+        update-types: ["version-update:semver-major"]
 
   # GitHub Actions — checkout, setup-node, setup-python, pages actions
   - package-ecosystem: github-actions
