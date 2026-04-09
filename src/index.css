@@ -707,15 +707,9 @@ a:hover { text-decoration: none; }
 
 @media (max-width: 700px) {
   .country-main {
-    grid-template-columns: 36px 1fr 100px 36px;
-  }
-  .country-mini-scores { display: none; }
-}
-
-@media (max-width: 480px) {
-  .country-main {
     grid-template-columns: 36px 1fr 36px;
   }
+  .country-mini-scores { display: none; }
   .country-score-col { display: none; }
   .country-score-mobile { display: block; }
 }
